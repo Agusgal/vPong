@@ -1,0 +1,24 @@
+#Start recording tcl command: 11/17/2019 18:02:12
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_create -name "TPF_Prueba" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+file copy -force -- "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/VGA.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/VGA.v"
+prj_save 
+prj_disable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/VGA.v"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/VGA.v"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/VGA.v"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll/My_Pll.ipx"
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+#Stop recording: 11/17/2019 18:22:48

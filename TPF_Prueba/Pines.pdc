@@ -1,0 +1,6 @@
+ldc_set_location -site {35} [get_ports Clk]
+ldc_set_location -site {6} [get_ports blue]
+ldc_set_location -site {9} [get_ports green]
+ldc_set_location -site {11} [get_ports h_sync]
+ldc_set_location -site {10} [get_ports red]
+ldc_set_location -site {2} [get_ports v_sync]

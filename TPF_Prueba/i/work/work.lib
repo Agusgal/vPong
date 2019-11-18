@@ -1,0 +1,412 @@
+timestamp=1574087048847
+
+[~A]
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBar.v=0*106717*107340
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBarMovement.v=0*109318*110510
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll/rtl/My_Pll.v=0*114495*116358
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Points.v=0*104223*105162
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/ResetGame.v=0*102493*102939
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Top.v=0*117805*119094
+C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/VGA.v=0*111904*112648
+C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v=0*23987*101301
+LastVerilogToplevel=main
+ModifyID=8
+Version=74
+
+[$root]
+A/$root=22|||1*816040
+BinI32/$root=3*560742
+SLP=3*560846
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|c73a565f2ade592f8ac1c68f484c9216e5785c51f12635b07f005a212e449f87
+
+[Ball]
+A/Ball=22|./../../BallandBar.v|14|1*792639
+BinI32/Ball=3*548338
+R=./../../BallandBar.v|14
+SLP=3*549401
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|fc9e6cdb6580d17da7794d7bdb9e675c1c532048a9747a42020068392cfc0720
+
+[BallMov]
+A/BallMov=22|./../../BallandBarMovement.v|3|1*794870
+BinI32/BallMov=3*549893
+R=./../../BallandBarMovement.v|3
+SLP=3*552920
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|5f7b6c0f8880751cf581673be9cd7e7b26527262ddaa47cb266f3a3c4d9b973a3fe1e3c06f4baa298839b8f696e67a3c
+
+[Bar]
+A/Bar=22|./../../BallandBar.v|2|1*790859
+BinI32/Bar=3*546925
+R=./../../BallandBar.v|2
+SLP=3*548024
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|7d962bf5cc036de5fe07b643880be3d5d8e6fbe70cd8c3a77567f372eadfccf1
+
+[BarrMov1]
+A/BarrMov1=22|./../../BallandBarMovement.v|104|1*797603
+BinI32/BarrMov1=3*554647
+R=./../../BallandBarMovement.v|104
+SLP=3*555348
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|71a75f19a46edd40ca63a11e370d9e615af3c42593d94d41b8f776d95f5eaf9811cfb1ff57a9234d4231f26bae32163f
+
+[BarrMov2]
+A/BarrMov2=22|./../../BallandBarMovement.v|123|1*799650
+BinI32/BarrMov2=3*555657
+R=./../../BallandBarMovement.v|123
+SLP=3*556358
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|d8b164c7687ef8f50f2cf77fba83ee2fd7df70bf5744687890b925ac3a70177242f3f8d09bfd88d59091e97320fdb361
+
+[My_Pll]
+A/My_Pll=22|./../../My_Pll/rtl/My_Pll.v|10|1*805468
+BinI32/My_Pll=3*558574
+R=./../../My_Pll/rtl/My_Pll.v|10
+SLP=3*558679
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|3bfb550e5fa278f1184289a75c1bae4f2077d673622f18235b8c243021592475
+
+[My_Pll_ipgen_lscc_pll]
+A/My_Pll_ipgen_lscc_pll=22|./../../My_Pll/rtl/My_Pll.v|73|1*807849
+BinI32/My_Pll_ipgen_lscc_pll=3*558786
+R=./../../My_Pll/rtl/My_Pll.v|73
+SLP=3*560041
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|1be044feb804528309d1988f78d7dfcda35e45b0ddb14903368d0903ea2fbcc1a85f53a69f29fc9f840dba83a0fb2bf7
+
+[Puntos1]
+A/Puntos1=22|./../../Points.v|2|1*783528
+BinI32/Puntos1=3*536207
+R=./../../Points.v|2
+SLP=3*544121
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|e3dad91b8b83be03265bc8c8f5d4c78a26527262ddaa47cb266f3a3c4d9b973a237ef4d6b07decc3fa1c755239dff3dc
+
+[ResetGame]
+A/ResetGame=22|./../../ResetGame.v|2|1*782009
+BinI32/ResetGame=3*535415
+R=./../../ResetGame.v|2
+SLP=3*535837
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|179a1b1d5d206378df48ae02421b6e36ab30e6cfa3d4817d923a83584e9807768f19123ab57b23a5242246b3fed92d00
+
+[VGA]
+A/VGA=22|./../../VGA.v|2|1*802265
+BinI32/VGA=3*556843
+R=./../../VGA.v|2
+SLP=3*557873
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|64f493fed36813a8630bde9991c8c86a223a5037f47d9a5866346201a72a5c5c
+
+[lscc_add_sub]
+A/lscc_add_sub=22|./../../../../../../../lscc/radiant/1.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v|94|1*502
+BinI32/lscc_add_sub=3*172
+R=./../../../../../../../lscc/radiant/1.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v|94
+SLP=3*4714
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|9f90e3790485432fdd288019fe66591c3d6ea4299e8d72830850624c10d366f92c873fe6f7fd89f7a279f0d9f3cfc583
+
+[lscc_adder]
+A/lscc_adder=22|./../../../../../../../lscc/radiant/1.1/ip/common/adder/rtl/lscc_adder.v|60|1*8968
+BinI32/lscc_adder=3*6295
+R=./../../../../../../../lscc/radiant/1.1/ip/common/adder/rtl/lscc_adder.v|60
+SLP=3*17606
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|0f1d672224ed8c5570fbec2d03c45c865a515c60238eb09c6fa762ca8d53729e2a67131300f245d7d9e24083dc78560d
+
+[lscc_cntr]
+A/lscc_cntr=22|./../../../../../../../lscc/radiant/1.1/ip/common/counter/rtl/lscc_cntr.v|66|1*82383
+BinI32/lscc_cntr=3*77947
+R=./../../../../../../../lscc/radiant/1.1/ip/common/counter/rtl/lscc_cntr.v|66
+SLP=3*82417
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|6e61bfee63913f6679e68869fe71470e420c16976db74be355c9c116369787f696da947938a371e17e946cad5255be1a
+
+[lscc_complex_mult]
+A/lscc_complex_mult=22|./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|59|1*38131
+BinI32/lscc_complex_mult=3*39985
+R=./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|59
+SLP=3*40370
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|7cb005fe1f8219e51c2b36b72954f35ed10cb7fec026ec492993d927c6bfbb6dc6d0ab74a52077626f52cab0c607cde9
+
+[lscc_dq_core]
+A/lscc_dq_core=22|./../../../../../../../lscc/radiant/1.1/ip/common/ram_dq/rtl/lscc_ram_dq.v|543|1*700498
+BinI32/lscc_dq_core=3*499167
+R=./../../../../../../../lscc/radiant/1.1/ip/common/ram_dq/rtl/lscc_ram_dq.v|543
+SLP=3*512824
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|3769385affc1f2ab3f72781538043420e6be09d27303523a952b28050ffd6c2c4b0724972e1357b3045891cde0a514af
+
+[lscc_fifo]
+A/lscc_fifo=22|./../../../../../../../lscc/radiant/1.1/ip/common/fifo/rtl/lscc_fifo.v|4|1*89065
+BinI32/lscc_fifo=3*85014
+R=./../../../../../../../lscc/radiant/1.1/ip/common/fifo/rtl/lscc_fifo.v|4
+SLP=3*104695
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|880f5ee7208ccd2b8056eb560ab54ef8fa691fb2a845c7d0017de5fa3ce5db6c026886c6363494e51ecb3b2fe9cc65a2
+
+[lscc_fifo_dc]
+A/lscc_fifo_dc=22|./../../../../../../../lscc/radiant/1.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v|57|1*115233
+BinI32/lscc_fifo_dc=3*113904
+R=./../../../../../../../lscc/radiant/1.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v|57
+SLP=3*147831
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|edbd6b436697e85a5082da2c378770e33fde0c31c2c7f6bf5c9a27c4330105b534fee12eee7eb6d8fe226a1d90ac091c
+
+[lscc_fifo_mem]
+A/lscc_fifo_mem=22|./../../../../../../../lscc/radiant/1.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v|864|1*162765
+BinI32/lscc_fifo_mem=3*159514
+R=./../../../../../../../lscc/radiant/1.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v|864
+SLP=3*246540
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|832bd247afc70a9b6dcb72d185ee03a19884158970a13ba2ea96967fd581a3b6e80353f729eb09b6f851c60a3605392a
+
+[lscc_fifo_mem_core]
+A/lscc_fifo_mem_core=22|./../../../../../../../lscc/radiant/1.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v|2268|1*302049
+BinI32/lscc_fifo_mem_core=3*264724
+R=./../../../../../../../lscc/radiant/1.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v|2268
+SLP=3*290914
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|832bd247afc70a9b6dcb72d185ee03a1f88eeb5397baccbed1b80e6fd0f41a94f3cc43cc84a5e2434d1ff6823e272c10
+
+[lscc_mult_accumulate]
+A/lscc_mult_accumulate=22|./../../../../../../../lscc/radiant/1.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v|59|1*395845
+BinI32/lscc_mult_accumulate=3*307369
+R=./../../../../../../../lscc/radiant/1.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v|59
+SLP=3*310482
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|e948bf68a1fc9f47dbcbd404e993eba954b48c415ef898473d7c636e9092d49e4483383840fd2f3baa377c33b2b8a100
+
+[lscc_mult_add_sub]
+A/lscc_mult_add_sub=22|./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|207|1*42049
+BinI32/lscc_mult_add_sub=3*40609
+R=./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|207
+SLP=3*43861
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|86014060d2ef69e91061db8a8b9ec555ebb619c6f7216ade15a51216ecba5c9aa3f774efa3c1eb7e2257d668a4b99e96
+
+[lscc_mult_add_sub_sum]
+A/lscc_mult_add_sub_sum=22|./../../../../../../../lscc/radiant/1.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v|72|1*404965
+BinI32/lscc_mult_add_sub_sum=3*313440
+R=./../../../../../../../lscc/radiant/1.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v|72
+SLP=3*316060
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|86014060d2ef69e91061db8a8b9ec555180e4f26ae6b3719d121439e4ba516d758fae07c4462b4a1f8c89d09881317da
+
+[lscc_multiplier]
+A/lscc_multiplier=22|./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|389|1*48544
+BinI32/lscc_multiplier=3*44631
+R=./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|389
+SLP=3*47170
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|5e962e4a71d9b29688dce46f44b753cb585bad1828b13753a12ef3d303f32c3da27eeb760784d1579642789ef8613f98
+
+[lscc_multiplier_dsp]
+A/lscc_multiplier_dsp=22|./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|737|1*66525
+BinI32/lscc_multiplier_dsp=3*62073
+R=./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|737
+SLP=3*72988
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|5e962e4a71d9b29688dce46f44b753cb4cde30f433eb36d91b9dd2e5fc1a9d427bb191755725bda036e35b423778b678
+
+[lscc_multiplier_lut]
+A/lscc_multiplier_lut=22|./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|503|1*54678
+BinI32/lscc_multiplier_lut=3*48037
+R=./../../../../../../../lscc/radiant/1.1/ip/common/complex_mult/rtl/lscc_complex_mult.v|503
+SLP=3*58946
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|5e962e4a71d9b29688dce46f44b753cb6249267933b4d0bcfda1c68c469f45c85e6c9e957f62f355468f9a8be4d2b68b
+
+[lscc_ram_dp]
+A/lscc_ram_dp=22|./../../../../../../../lscc/radiant/1.1/ip/common/ram_dp/rtl/lscc_ram_dp.v|57|1*423771
+BinI32/lscc_ram_dp=3*322526
+R=./../../../../../../../lscc/radiant/1.1/ip/common/ram_dp/rtl/lscc_ram_dp.v|57
+SLP=3*408528
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|858c087b533732f5c0a003a6221babc286c681c0f3fb629db226d3f7195f797564b74d57802a3beeee1f09179b5a60a9
+
+[lscc_ram_dp_core]
+A/lscc_ram_dp_core=22|./../../../../../../../lscc/radiant/1.1/ip/common/ram_dp/rtl/lscc_ram_dp.v|1461|1*561874
+BinI32/lscc_ram_dp_core=3*426683
+R=./../../../../../../../lscc/radiant/1.1/ip/common/ram_dp/rtl/lscc_ram_dp.v|1461
+SLP=3*452715
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|d60399b64f3604c77b051de5508fa85967c9bb85d6e389d4ee68c9570716950336c084dbda1228c024d1c507e9b60fb1
+
+[lscc_ram_dq]
+A/lscc_ram_dq=22|./../../../../../../../lscc/radiant/1.1/ip/common/ram_dq/rtl/lscc_ram_dq.v|56|1*654208
+BinI32/lscc_ram_dq=3*468355
+R=./../../../../../../../lscc/radiant/1.1/ip/common/ram_dq/rtl/lscc_ram_dq.v|56
+SLP=3*492929
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|b7244a47e1e43284381e5fde0b5f4458d85cfd82a07f16d873445d5785cf059cf46924aa6405b75eae7d1c43b8f610a4
+
+[lscc_rom]
+A/lscc_rom=22|./../../../../../../../lscc/radiant/1.1/ip/common/rom/rtl/lscc_rom.v|56|1*746704
+BinI32/lscc_rom=3*517943
+R=./../../../../../../../lscc/radiant/1.1/ip/common/rom/rtl/lscc_rom.v|56
+SLP=3*521992
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|1d3695e2f6ce05cec0b7e7463c6b3efd4a07c75f2fa40568c09e9134eae7466bc5ee788481935b25ed0f7497ece555f2
+
+[lscc_subtractor]
+A/lscc_subtractor=22|./../../../../../../../lscc/radiant/1.1/ip/common/subtractor/rtl/lscc_subtractor.v|60|1*19934
+BinI32/lscc_subtractor=3*21504
+R=./../../../../../../../lscc/radiant/1.1/ip/common/subtractor/rtl/lscc_subtractor.v|60
+SLP=3*33318
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|ce3de759e932a21cd91c112f1988776b23a625b08f36ac5b950909a14a79420abe2b271262f77aa81676af6ce0b1bbc7
+
+[main]
+A/main=22|./../../Top.v|1|1*816542
+BinI32/main=3*560914
+R=./../../Top.v|1
+SLP=3*562102
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|a10d1194a18e37435e6d6f0ad7feedab53b7efb3b9cced4d6debe6771b61242e
+
+[pmi_add]
+A/pmi_add=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_add.v|52|1*34748
+BinI32/pmi_add=3*38626
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_add.v|52
+SLP=3*39572
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|4b04cb1b87c761fc28edff202865b46b26527262ddaa47cb266f3a3c4d9b973acf38f728fd71245c388356136dd1112a
+
+[pmi_addsub]
+A/pmi_addsub=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_addsub.v|42|1*31090
+BinI32/pmi_addsub=3*37243
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_addsub.v|42
+SLP=3*38195
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|7cf9dcdf182bdb89db52e6f2b6019dc28fb212b42418c9a11b410e60de8f44ac7671d6cc22205d10888490889addb011
+
+[pmi_complex_mult]
+A/pmi_complex_mult=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_complex_mult.v|54|1*78378
+BinI32/pmi_complex_mult=3*76102
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_complex_mult.v|54
+SLP=3*77195
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|43c47a35c7e4815ff1d7fe73647afc164d7873795b8855bdec47ffdea8d919695ba99d5e6ed8db60c67dc450be36f900
+
+[pmi_counter]
+A/pmi_counter=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_counter.v|41|1*86191
+BinI32/pmi_counter=3*83173
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_counter.v|41
+SLP=3*84717
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|ff4a8fec5b18065fcab5a70c319f1d7696aab7ffb5472d59e8acaa42b6eb495ed4c06088fd54e1eb7be63f9cd5e87099
+
+[pmi_dsp]
+A/pmi_dsp=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_dsp.v|61|1*772494
+BinI32/pmi_dsp=3*533265
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_dsp.v|61
+SLP=3*533769
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|d2831c8f3ee6e42e1d2d85e781514cfb26527262ddaa47cb266f3a3c4d9b973af57530a6dba1c4c132d1ecf781a924b2
+
+[pmi_fifo]
+A/pmi_fifo=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_fifo.v|49|1*109452
+BinI32/pmi_fifo=3*111414
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_fifo.v|49
+SLP=3*113171
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|ff5d87f04673177ddc318d1aa0b88101eaf190bca5f7b29ee504cb730d4c63ebe5aba054b2529956d8dd893e87e59e19
+
+[pmi_fifo_dc]
+A/pmi_fifo_dc=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_fifo_dc.v|52|1*388750
+BinI32/pmi_fifo_dc=3*304684
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_fifo_dc.v|52
+SLP=3*306600
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|dfa286b823ebb6b3215a3e19c69ffacf090caa6fbe2cbf77ec9da31c0a9868b0cffbc8f97f2acfae9a3f52ed83a4522d
+
+[pmi_mac]
+A/pmi_mac=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_mac.v|54|1*401250
+BinI32/pmi_mac=3*311074
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_mac.v|54
+SLP=3*312650
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|3e86414a2d70ce6f693137a7d82e680a26527262ddaa47cb266f3a3c4d9b973ac8aeb5479f67a44c672fecd3691ed055
+
+[pmi_mult]
+A/pmi_mult=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_mult.v|53|1*420326
+BinI32/pmi_mult=3*320808
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_mult.v|53
+SLP=3*321917
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|28f5655149b4425c672c8540852559b294736bba7cf849d6d067f1d5f2d1dbbb1f828605ce252c14e4a05c62998fc65a
+
+[pmi_multaddsub]
+A/pmi_multaddsub=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_multaddsub.v|54|1*416456
+BinI32/pmi_multaddsub=3*319046
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_multaddsub.v|54
+SLP=3*320105
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|05315a7722bf1e9a9fc34fdd9e6b985a8ce7bc3303b540c94c887ff2b3fcd7f51887cb1d3a4990fb82974240e70ce4fa
+
+[pmi_multaddsubsum]
+A/pmi_multaddsubsum=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_multaddsubsum.v|55|1*411850
+BinI32/pmi_multaddsubsum=3*317006
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_multaddsubsum.v|55
+SLP=3*318168
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|05315a7722bf1e9a9fc34fdd9e6b985a5c954d6fd9a444462837a402b922e73816fbf34130962b6ec014952e6dc9ee66
+
+[pmi_ram_dp]
+A/pmi_ram_dp=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dp.v|53|1*648565
+BinI32/pmi_ram_dp=3*466734
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dp.v|53
+SLP=3*467752
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|954193f7fe33e45696312cf5394b53227107efc2957ca38fd99266456bbe609778e75aa0141206d8e3d61631b8a434dd
+
+[pmi_ram_dp_be]
+A/pmi_ram_dp_be=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dp_be.v|54|1*760562
+BinI32/pmi_ram_dp_be=3*526655
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dp_be.v|54
+SLP=3*529542
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|17013a2c32cee927ec453e3960b7296ea92f1bcdb8951e3991f3d626638c965147810b7493047b9136b8af05cc5c39e1
+
+[pmi_ram_dq]
+A/pmi_ram_dq=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dq.v|47|1*741851
+BinI32/pmi_ram_dq=3*516355
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dq.v|47
+SLP=3*517342
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|6c85cb72432aa0a85fe413bde8c95c6443ffa2ddd881f7920fb311655d90807163d1c31354535a962b13792be11d74e6
+
+[pmi_ram_dq_be]
+A/pmi_ram_dq_be=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v|47|1*767102
+BinI32/pmi_ram_dq_be=3*530247
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v|47
+SLP=3*532557
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|fd0b17312e7a91600e53cb08dba58c38bf467307881f191e11918c2efffd7e167fe63a407eb4a44cb5c87ed0f1eaec4d
+
+[pmi_rom]
+A/pmi_rom=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_rom.v|50|1*752863
+BinI32/pmi_rom=3*523447
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_rom.v|50
+SLP=3*524765
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|35f6cf8da1afe37fdb4b208448c231a926527262ddaa47cb266f3a3c4d9b973aa1abe9cdbc9c77c94d11ea3a6a9c862e
+
+[pmi_sub]
+A/pmi_sub=22|./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_sub.v|52|1*757169
+BinI32/pmi_sub=3*525298
+R=./../../../../../../../lscc/radiant/1.1/ip/pmi/pmi_sub.v|52
+SLP=3*526244
+Version=10.5.216.6767 (Windows)|0000000a789cd34d494a57d02d33ca360500104b02f0|7555881a006e439f757e900399eaf7d326527262ddaa47cb266f3a3c4d9b973afbb6a76b0fb9b92f5bf05ac0896758bf
+
+[~MFT]
+0=4|0work.mgf|119094|0
+1=3|1work.mgf|816542|3786
+3=6|3work.mgf|562102|1204
+
+[~U]
+$root=12|0*116933|
+Ball=12|0*106451||0x10
+BallMov=12|0*108378||0x10
+Bar=12|0*106180||0x10
+BarrMov1=12|0*108715||0x10
+BarrMov2=12|0*109015||0x10
+My_Pll=12|0*113695||0x10
+My_Pll_ipgen_lscc_pll=12|0*113946|
+Puntos1=12|0*103944||0x10
+ResetGame=12|0*102276||0x10
+VGA=12|0*111572||0x10
+lscc_add_sub=12|0*422|
+lscc_adder=12|0*938|
+lscc_cntr=12|0*5993|
+lscc_complex_mult=12|0*2744|
+lscc_dq_core=12|0*19425|
+lscc_fifo=12|0*6783|
+lscc_fifo_dc=12|0*7940|
+lscc_fifo_mem=12|0*8746|
+lscc_fifo_mem_core=12|0*10560|
+lscc_mult_accumulate=12|0*12074|
+lscc_mult_add_sub=12|0*3154|
+lscc_mult_add_sub_sum=12|0*12983|
+lscc_multiplier=12|0*3644|
+lscc_multiplier_dsp=12|0*4867|
+lscc_multiplier_lut=12|0*4197|
+lscc_ram_dp=12|0*14791|
+lscc_ram_dp_core=12|0*16599|
+lscc_ram_dq=12|0*18095|
+lscc_rom=12|0*20819|
+lscc_subtractor=12|0*1481|
+main=12|0*117435||0x10
+pmi_add=12|0*2416||0x10
+pmi_addsub=12|0*2047||0x10
+pmi_complex_mult=12|0*5535||0x10
+pmi_counter=12|0*6409||0x10
+pmi_dsp=12|0*23467||0x10
+pmi_fifo=12|0*7419||0x10
+pmi_fifo_dc=12|0*11495||0x10
+pmi_mac=12|0*12559||0x10
+pmi_mult=12|0*14397||0x10
+pmi_multaddsub=12|0*13966||0x10
+pmi_multaddsubsum=12|0*13492||0x10
+pmi_ram_dp=12|0*17530||0x10
+pmi_ram_dp_be=12|0*22258||0x10
+pmi_ram_dq=12|0*20287||0x10
+pmi_ram_dq_be=12|0*22902||0x10
+pmi_rom=12|0*21394||0x10
+pmi_sub=12|0*21924||0x10

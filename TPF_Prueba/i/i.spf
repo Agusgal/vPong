@@ -1,0 +1,13 @@
+<RadiantSimulationProject simType="Active-HDL" language="1" name="i" stage="0" path="." version="2.0">
+    <Source worklib="work" type="VERILOG" path="ResetGame.v" include="none"/>
+    <Source worklib="work" type="VERILOG" path="Points.v" include="none"/>
+    <Source worklib="work" type="VERILOG" path="BallandBar.v" include="none"/>
+    <Source worklib="work" type="VERILOG" path="BallandBarMovement.v" include="none"/>
+    <Source worklib="work" type="VERILOG" path="VGA.v" include="none"/>
+    <Source worklib="work" type="VERILOG" path="My_Pll/rtl/My_Pll.v" include="none"/>
+    <Source worklib="work" type="VERILOG" path="Top.v" include="none"/>
+    <SimLib value="ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="main"/>
+</RadiantSimulationProject>

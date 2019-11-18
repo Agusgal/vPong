@@ -1,0 +1,171 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 1.1.0.165.1
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o TPF_Prueba_impl_1.udb -ldc C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc -gui -msgset C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/promote.xml TPF_Prueba_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'TPF_Prueba_impl_1.vm' ...
+Reading constraint file 'C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc' ...
+WARNING - No port matched 'Clk'.
+WARNING - Can't resolve object 'Clk' in constraint 'create_clock -name {Clk} -period 83.3333333333333 [get_ports Clk]'.
+WARNING - Remove invalid constraint 'create_clock -name {Clk} -period 83.3333333333333 [get_ports Clk]'.
+Removing unused logic...
+INFO - Signal barra1/blue_N_664[10]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_664[9]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_664[2]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_664[1]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[9]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[8]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[7]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[6]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[5]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[4]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[3]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[2]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/x_count[1]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_664[2]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_664[1]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[11]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[9]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[8]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[7]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[6]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[5]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[4]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[3]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[2]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_721[1]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[6]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[5]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[4]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[3]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[2]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[1]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_269[0]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[6]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[5]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[4]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[3]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[2]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[1]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/up_N_450[0]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[9]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[8]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[7]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[6]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[5]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[4]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[3]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[2]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_584[1]_2 undriven or does not drive anything - clipped
+INFO - Signal x_count[0] undriven or does not drive anything - clipped
+INFO - Signal y_bar2[6] undriven or does not drive anything - clipped
+INFO - Signal y_bar2[4] undriven or does not drive anything - clipped
+INFO - Signal speeddef[1] undriven or does not drive anything - clipped
+INFO - Signal speeddef[0] undriven or does not drive anything - clipped
+Starting design annotation....
+WARNING - The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+Writing output file 'TPF_Prueba_impl_1.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 41 MB
+
+
+</PRE></DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

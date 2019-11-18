@@ -1,0 +1,444 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/1.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+</HEAD>
+<PRE><A name="pn191117182248"></A><B><U><big>pn191117182248</big></U></B>
+#Start recording tcl command: 11/17/2019 18:02:12
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_create -name "TPF_Prueba" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+file copy -force -- "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_E3/VGA.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/VGA.v"
+prj_save 
+prj_disable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/VGA.v"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1/VGA.v"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBar.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBarMovement.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/ResetGame.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Top.v" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/VGA.v"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll/My_Pll.ipx"
+prj_run Synthesis -impl impl_1
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+#Stop recording: 11/17/2019 18:22:48
+
+
+
+<A name="pn191117182837"></A><B><U><big>pn191117182837</big></U></B>
+#Start recording tcl command: 11/17/2019 18:23:07
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_open "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/TPF_Prueba.rdf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1.xcf"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+#Stop recording: 11/17/2019 18:28:37
+
+
+
+<A name="pn191117185504"></A><B><U><big>pn191117185504</big></U></B>
+#Start recording tcl command: 11/17/2019 18:29:01
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_open "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/TPF_Prueba.rdf"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_1.xcf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_2.xcf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_3.xcf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_4.xcf"
+#Stop recording: 11/17/2019 18:55:04
+
+
+
+<A name="pn191117190346"></A><B><U><big>pn191117190346</big></U></B>
+#Start recording tcl command: 11/17/2019 18:56:22
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_open "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/TPF_Prueba.rdf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_5.xcf"
+prj_run Export -impl impl_1
+prj_save 
+#Stop recording: 11/17/2019 19:03:46
+
+
+
+<A name="pn191117192832"></A><B><U><big>pn191117192832</big></U></B>
+#Start recording tcl command: 11/17/2019 19:18:21
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_open "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/TPF_Prueba.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_7.xcf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1_8.xcf"
+#Stop recording: 11/17/2019 19:28:32
+
+
+
+<A name="pn191118002450"></A><B><U><big>pn191118002450</big></U></B>
+#Start recording tcl command: 11/17/2019 22:06:06
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_open "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/TPF_Prueba.rdf"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Pines.pdc"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_enable_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_add_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/i/i.spf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+#Stop recording: 11/18/2019 00:24:50
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn191117182248>pn191117182248</A></LI>
+<LI><A href=#pn191117182837>pn191117182837</A></LI>
+<LI><A href=#pn191117185504>pn191117185504</A></LI>
+<LI><A href=#pn191117190346>pn191117190346</A></LI>
+<LI><A href=#pn191117192832>pn191117192832</A></LI>
+<LI><A href=#pn191118002450>pn191118002450</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

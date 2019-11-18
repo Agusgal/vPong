@@ -1,0 +1,60 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+i=.\i\i.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=
+LibNames=ovi_ice40up
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+i=.
+pmi=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\..\..\..\..\..\lscc\radiant\1.1\ip\pmi\pmi_iCE40UP.v=-1
+/..\..\ResetGame.v=-1
+/..\..\Points.v=-1
+/..\..\BallandBar.v=-1
+/..\..\BallandBarMovement.v=-1
+/..\..\VGA.v=-1
+/..\..\My_Pll\rtl\My_Pll.v=-1
+/..\..\Top.v=-1
+[Files.Data]
+.\..\..\..\..\..\..\lscc\radiant\1.1\ip\pmi\pmi_iCE40UP.v=Verilog Source Code
+.\..\ResetGame.v=Verilog Source Code
+.\..\Points.v=Verilog Source Code
+.\..\BallandBar.v=Verilog Source Code
+.\..\BallandBarMovement.v=Verilog Source Code
+.\..\VGA.v=Verilog Source Code
+.\..\My_Pll\rtl\My_Pll.v=Verilog Source Code
+.\..\Top.v=Verilog Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,1 @@
+-w -erf "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/i/compile/i.erf" -d "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/i/compile" -s "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/i/library.cfg" -j "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/i/projlib.cfg" -work work -work pmi C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd 

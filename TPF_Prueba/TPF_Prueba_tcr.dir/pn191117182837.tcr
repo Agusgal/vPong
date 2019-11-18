@@ -1,0 +1,12 @@
+#Start recording tcl command: 11/17/2019 18:23:07
+#Project Location: C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba; Project name: TPF_Prueba
+prj_open "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/TPF_Prueba.rdf"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+prj_remove_source "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/source/impl_1.xcf"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+launch_programmer_prj "C:/lscc/radiant/1.1"
+#Stop recording: 11/17/2019 18:28:37
