@@ -9,13 +9,18 @@ module main(der1,izq1,der2,izq2,h_sync,v_sync,red,green,blue);
 	reg reset;
 	reg [1:0] count=0;
 	reg [5:0] speeddef=0;
+	
 	//Parametros
 	localparam VSYNC_START=479+10;
 	localparam VBPORCH_START=479+10+2;
 	localparam SPEEDLIMIT=12;
-	//CLK
+	
+	//CLK 
 	HSOSC ins1(.CLKHFPU(1'b1),.CLKHFEN(1'b1),.CLKHF(Clk));
+	
+	//Se define clock de 12 Mhz (acordarse de avisar clock utilizado en timing constraint editor)
 	defparam ins1.CLKHF_DIV = "0b10";
+	
 	always@(posedge Clk) begin
 		if ( count == 0 ) begin
 			reset<=0;
@@ -26,10 +31,13 @@ module main(der1,izq1,der2,izq2,h_sync,v_sync,red,green,blue);
 		else
 			reset<=1;
 		end
+	
+	//PLL
 	My_Pll pll(.ref_clk_i( Clk ),
         .rst_n_i( reset ),
         .outcore_o( ),
         .outglobal_o( ClockK ));
+	
 	//Defino la velocidad de la pelota
 	always@(posedge ((y_count >= VSYNC_START) & (y_count < VBPORCH_START )) ) begin
 		if (speeddef == SPEEDLIMIT) begin
