@@ -1,8 +1,8 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 1.1.0.165.1
-// Netlist written on Mon Nov 18 13:26:34 2019
+// Netlist written on Wed Nov 20 18:23:01 2019
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
-// file 0 "c:/users/juan martin/documents/proyectosradiant/tpf_prueba/my_pll/rtl/my_pll.v"
+// file 0 "c:/users/abril/documents/github/tpf-grupo-4/tpf_prueba/my_pll/rtl/my_pll.v"
 // file 1 "c:/lscc/radiant/1.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
 // file 2 "c:/lscc/radiant/1.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
 // file 3 "c:/lscc/radiant/1.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"

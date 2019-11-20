@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
 
-Mon Nov 18 14:07:45 2019
+Wed Nov 20 18:23:30 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -118,7 +118,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 6.94564%
+Constraint Coverage: 6.6335%
 
 3.1.2  Timing Errors
 ---------------------
@@ -146,7 +146,7 @@ create_generated_clock -name {ClockK} -
 source [get_pins {pll/lscc_pll_inst/u_P                                                                                                    
 LL_B/REFERENCECLK}] -multiply_by 21 -di                                                                                                    
 vide_by 8 [get_pins {pll/lscc_pll_inst/                                                                                                    
-u_PLL_B/OUTGLOBAL }]                    |    3.968 ns |   -1.084 ns |    3   |   12.382 ns |  80.762 MHz |       50       |       20       
+u_PLL_B/OUTGLOBAL }]                    |    3.968 ns |   -1.084 ns |    3   |   12.382 ns |  80.762 MHz |       51       |       20       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 3.2.2  Setup Critical Endpoint Summary 
@@ -157,13 +157,13 @@ u_PLL_B/OUTGLOBAL }]                    |    3.968 ns |   -1.084 ns |    3   |  
 reset_c/D                                |  -12.887 ns 
 count_i1/D                               |  -12.887 ns 
 count_i0/D                               |  -12.887 ns 
-controller/h_count_588__i9/SR            |   -1.085 ns 
-controller/h_count_588__i8/SR            |   -1.085 ns 
-controller/h_count_588__i7/SR            |   -1.085 ns 
-controller/h_count_588__i6/SR            |   -1.085 ns 
-controller/h_count_588__i5/SR            |   -1.085 ns 
-controller/h_count_588__i4/SR            |   -1.085 ns 
-controller/h_count_588__i3/SR            |   -1.085 ns 
+controller/h_count_646__i5/SR            |   -1.085 ns 
+controller/h_count_646__i4/SR            |   -1.085 ns 
+controller/h_count_646__i3/SR            |   -1.085 ns 
+controller/h_count_646__i2/SR            |   -1.085 ns 
+controller/h_count_646__i1/SR            |   -1.085 ns 
+controller/h_count_646__i9/SR            |   -1.085 ns 
+controller/h_count_646__i0/SR            |   -1.085 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|          23 
@@ -188,7 +188,7 @@ create_generated_clock -name {ClockK} -
 source [get_pins {pll/lscc_pll_inst/u_P                                                                                                    
 LL_B/REFERENCECLK}] -multiply_by 21 -di                                                                                                    
 vide_by 8 [get_pins {pll/lscc_pll_inst/                                                                                                    
-u_PLL_B/OUTGLOBAL }]                    |    0.000 ns |    2.448 ns |    2   |        ---- |        ---- |       50       |        0       
+u_PLL_B/OUTGLOBAL }]                    |    0.000 ns |    1.971 ns |    2   |        ---- |        ---- |       51       |        0       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 3.3.2  Hold Critical Endpoint Summary 
@@ -197,6 +197,7 @@ u_PLL_B/OUTGLOBAL }]                    |    0.000 ns |    2.448 ns |    2   |  
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
+Pas_Gen/pausa_c/D                        |    1.971 ns 
 controller/v_count__i0/SR                |    2.448 ns 
 controller/v_count__i9/SR                |    2.448 ns 
 controller/v_count__i8/SR                |    2.448 ns 
@@ -206,7 +207,6 @@ controller/v_count__i5/SR                |    2.448 ns
 controller/v_count__i4/SR                |    2.448 ns 
 controller/v_count__i3/SR                |    2.448 ns 
 controller/v_count__i2/SR                |    2.448 ns 
-controller/v_count__i1/SR                |    2.448 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -223,8 +223,8 @@ Clocked but unconstrained timing start points
 -------------------------------------------------------------------
         Listing 10 Start Points         |           Type           
 -------------------------------------------------------------------
-x_ball_6__I_0/up_c/Q                    |    No arrival or required
 x_ball_6__I_0/der_c/Q                   |    No arrival or required
+x_ball_6__I_0/up_c/Q                    |    No arrival or required
 x_ball_6__I_0/x_place_i6/Q              |    No arrival or required
 x_ball_6__I_0/x_place_i5/Q              |    No arrival or required
 x_ball_6__I_0/x_place_i4/Q              |    No arrival or required
@@ -257,7 +257,7 @@ barrap1/x_place_i4/D                    |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        83
+ts                                      |                        84
                                         |                          
 -------------------------------------------------------------------
 
@@ -275,12 +275,13 @@ create_generated_clock,
 ...
 
 -------------------------------------------------------------------
-     Listing 9 Start or End Points      |           Type           
+     Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
 der1                                    |                     input
 izq1                                    |                     input
 der2                                    |                     input
 izq2                                    |                     input
+pause                                   |                     input
 h_sync                                  |                    output
 v_sync                                  |                    output
 red                                     |                    output
@@ -288,7 +289,7 @@ green                                   |                    output
 blue                                    |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                         9
+Number of I/O ports without constraint  |                        10
                                         |                          
 -------------------------------------------------------------------
 
@@ -297,12 +298,12 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 6 Instance(s)          |           Type           
 -------------------------------------------------------------------
-speeddef_587__i1                        |                  No Clock
-speeddef_587__i4                        |                  No Clock
-speeddef_587__i5                        |                  No Clock
-speeddef_587__i6                        |                  No Clock
-speeddef_587__i3                        |                  No Clock
-speeddef_587__i2                        |                  No Clock
+speeddef__i0                            |                  No Clock
+speeddef__i1                            |                  No Clock
+speeddef__i5                            |                  No Clock
+speeddef__i4                            |                  No Clock
+speeddef__i3                            |                  No Clock
+speeddef__i2                            |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
@@ -364,7 +365,7 @@ End-of-path arrival time( ns )              431.429
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -372,19 +373,23 @@ Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 controller/v_count__i8/CK->controller/v_count__i8/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  13      
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  14      
 y_count[8]                                                NET DELAY      0.280         5.971  1       
-controller/i1_2_lut_3_lut/C->controller/i1_2_lut_3_lut/Z
+controller/i2_2_lut_3_lut/C->controller/i2_2_lut_3_lut/Z
                                           LUT4            C_TO_Z_DELAY   0.477         6.448  3       
-n12327                                                    NET DELAY      2.075         8.523  1       
-i4_4_lut_adj_273/C->i4_4_lut_adj_273/Z    LUT4            C_TO_Z_DELAY   0.477         9.000  1       
-n10_adj_1064                                              NET DELAY      2.075        11.075  1       
-i5_4_lut/B->i5_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.552  7       
-speeddef_5__N_11                                          NET DELAY      2.075        13.627  1       
-i25_4_lut/B->i25_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        14.104  46      
+controller/n6710                                          NET DELAY      2.075         8.523  1       
+controller/i1_2_lut_adj_152/B->controller/i1_2_lut_adj_152/Z
+                                          LUT4            B_TO_Z_DELAY   0.477         9.000  2       
+n48                                                       NET DELAY      2.075        11.075  1       
+controller/i4_4_lut/C->controller/i4_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        11.552  8       
+v_sync_N_70                                               NET DELAY      2.075        13.627  1       
+controller/i1_4_lut/B->controller/i1_4_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.477        14.104  46      
 Speed                                                     NET DELAY      2.075        16.179  1       
-i14_3_lut_3_lut/B->i14_3_lut_3_lut/Z      LUT4            B_TO_Z_DELAY   0.477        16.656  1       
-n6_adj_1072                                               NET DELAY      2.075        18.731  1       
+i13_3_lut_4_lut_3_lut/A->i13_3_lut_4_lut_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.477        16.656  1       
+n19691                                                    NET DELAY      2.075        18.731  1       
 
 
 Destination Clock Path
@@ -427,7 +432,7 @@ End-of-path arrival time( ns )              431.429
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -435,19 +440,22 @@ Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 controller/v_count__i8/CK->controller/v_count__i8/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  13      
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  14      
 y_count[8]                                                NET DELAY      0.280         5.971  1       
-controller/i1_2_lut_3_lut/C->controller/i1_2_lut_3_lut/Z
+controller/i2_2_lut_3_lut/C->controller/i2_2_lut_3_lut/Z
                                           LUT4            C_TO_Z_DELAY   0.477         6.448  3       
-n12327                                                    NET DELAY      2.075         8.523  1       
-i4_4_lut_adj_273/C->i4_4_lut_adj_273/Z    LUT4            C_TO_Z_DELAY   0.477         9.000  1       
-n10_adj_1064                                              NET DELAY      2.075        11.075  1       
-i5_4_lut/B->i5_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.552  7       
-speeddef_5__N_11                                          NET DELAY      2.075        13.627  1       
-i25_4_lut/B->i25_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        14.104  46      
+controller/n6710                                          NET DELAY      2.075         8.523  1       
+controller/i1_2_lut_adj_152/B->controller/i1_2_lut_adj_152/Z
+                                          LUT4            B_TO_Z_DELAY   0.477         9.000  2       
+n48                                                       NET DELAY      2.075        11.075  1       
+controller/i4_4_lut/C->controller/i4_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        11.552  8       
+v_sync_N_70                                               NET DELAY      2.075        13.627  1       
+controller/i1_4_lut/B->controller/i1_4_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.477        14.104  46      
 Speed                                                     NET DELAY      2.075        16.179  1       
-i2878_2_lut_3_lut/B->i2878_2_lut_3_lut/Z  LUT4            B_TO_Z_DELAY   0.477        16.656  1       
-n3553                                                     NET DELAY      2.075        18.731  1       
+i1_3_lut/A->i1_3_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        16.656  1       
+n2241                                                     NET DELAY      2.075        18.731  1       
 
 
 Destination Clock Path
@@ -490,7 +498,7 @@ End-of-path arrival time( ns )              431.429
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -498,19 +506,22 @@ Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 controller/v_count__i8/CK->controller/v_count__i8/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  13      
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  14      
 y_count[8]                                                NET DELAY      0.280         5.971  1       
-controller/i1_2_lut_3_lut/C->controller/i1_2_lut_3_lut/Z
+controller/i2_2_lut_3_lut/C->controller/i2_2_lut_3_lut/Z
                                           LUT4            C_TO_Z_DELAY   0.477         6.448  3       
-n12327                                                    NET DELAY      2.075         8.523  1       
-i4_4_lut_adj_273/C->i4_4_lut_adj_273/Z    LUT4            C_TO_Z_DELAY   0.477         9.000  1       
-n10_adj_1064                                              NET DELAY      2.075        11.075  1       
-i5_4_lut/B->i5_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.552  7       
-speeddef_5__N_11                                          NET DELAY      2.075        13.627  1       
-i25_4_lut/B->i25_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        14.104  46      
+controller/n6710                                          NET DELAY      2.075         8.523  1       
+controller/i1_2_lut_adj_152/B->controller/i1_2_lut_adj_152/Z
+                                          LUT4            B_TO_Z_DELAY   0.477         9.000  2       
+n48                                                       NET DELAY      2.075        11.075  1       
+controller/i4_4_lut/C->controller/i4_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        11.552  8       
+v_sync_N_70                                               NET DELAY      2.075        13.627  1       
+controller/i1_4_lut/B->controller/i1_4_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.477        14.104  46      
 Speed                                                     NET DELAY      2.075        16.179  1       
-i1567_4_lut_4_lut/C->i1567_4_lut_4_lut/Z  LUT4            C_TO_Z_DELAY   0.477        16.656  1       
-n2250                                                     NET DELAY      2.075        18.731  1       
+i1_4_lut_adj_230/B->i1_4_lut_adj_230/Z    LUT4            B_TO_Z_DELAY   0.477        16.656  1       
+n2243                                                     NET DELAY      2.075        18.731  1       
 
 
 Destination Clock Path
@@ -527,7 +538,7 @@ Clk                                                       NET DELAY      2.075  
 
 4.1.2  Setup path details for constraint: create_generated_clock -name {ClockK} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 21 -divide_by 8 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] 
 ----------------------------------------------------------------------
-50 endpoints scored, 20 timing errors detected.
+51 endpoints scored, 20 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
@@ -536,7 +547,7 @@ Clk                                                       NET DELAY      2.075  
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i0/SR
+Path End         : controller/h_count_646__i6/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -573,17 +584,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -592,7 +602,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i1/SR
+Path End         : controller/h_count_646__i7/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -629,17 +639,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -648,7 +657,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i2/SR
+Path End         : controller/h_count_646__i8/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -685,17 +694,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -704,7 +712,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i3/SR
+Path End         : controller/h_count_646__i0/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -741,17 +749,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -760,7 +767,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i4/SR
+Path End         : controller/h_count_646__i9/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -797,17 +804,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -816,7 +822,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i5/SR
+Path End         : controller/h_count_646__i1/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -853,17 +859,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -872,7 +877,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i6/SR
+Path End         : controller/h_count_646__i2/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -909,17 +914,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -928,7 +932,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i7/SR
+Path End         : controller/h_count_646__i3/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -965,17 +969,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -984,7 +987,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i8/SR
+Path End         : controller/h_count_646__i4/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -1021,17 +1024,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -1040,7 +1042,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i9/SR
+Path End         : controller/h_count_646__i5/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -1077,17 +1079,16 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -1146,8 +1147,9 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 count_i1/CK->count_i1/Q                   FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  10      
 count[1]                                                  NET DELAY      0.280         3.746  1       
-i14_3_lut_3_lut/C->i14_3_lut_3_lut/Z      LUT4            C_TO_Z_DELAY   0.450         4.196  1       
-n6_adj_1072                                               NET DELAY      2.075         6.271  1       
+i13_3_lut_4_lut_3_lut/B->i13_3_lut_4_lut_3_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.450         4.196  1       
+n19691                                                    NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -1199,8 +1201,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 count_i1/CK->count_i1/Q                   FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  10      
 count[1]                                                  NET DELAY      0.280         3.746  1       
-i2878_2_lut_3_lut/C->i2878_2_lut_3_lut/Z  LUT4            C_TO_Z_DELAY   0.450         4.196  1       
-n3553                                                     NET DELAY      2.075         6.271  1       
+i1_3_lut/B->i1_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.450         4.196  1       
+n2241                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -1252,8 +1254,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-i1567_4_lut_4_lut/D->i1567_4_lut_4_lut/Z  LUT4            D_TO_Z_DELAY   0.450         4.196  1       
-n2250                                                     NET DELAY      2.075         6.271  1       
+i1_4_lut_adj_230/D->i1_4_lut_adj_230/Z    LUT4            D_TO_Z_DELAY   0.450         4.196  1       
+n2243                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -1270,13 +1272,66 @@ Clk                                                       NET DELAY      2.075  
 
 4.2.2  Hold path details for constraint: create_generated_clock -name {ClockK} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 21 -divide_by 8 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] 
 ----------------------------------------------------------------------
-50 endpoints scored, 0 timing errors detected.
+51 endpoints scored, 0 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : count_i1/Q
+Path End         : Pas_Gen/pausa_c/D
+Source Clock     : pll/lscc_pll_inst/Clk
+Destination Clock: ClockK
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.971 ns  (Passed)
+
+  Destination Clock Arrival Time (ClockK:R#1)     0.000
++ Generated Clock Source Latency                  2.225
++ Destination Clock Uncertainty                   0.000
++ Destination Clock Path Delay                    2.075
++ Hold Time                                      -0.000
+---------------------------------------------   -------
+End-of-path required time( ns )                   4.300
+
+  Source Clock Arrival Time (pll/lscc_pll_inst/Clk:R#1)   0.000
++ Source Clock Source Latency                             0.000
++ Source Clock Path Delay                                 2.075
++ Data Path Delay                                         4.196
+-------------------------------------------------------   -----
+End-of-path arrival time( ns )                            6.271
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+ins1/CLKHF                                HSOSC_CORE      CLOCK LATENCY  0.000         0.000  4       
+Clk                                                       NET DELAY      2.075         2.075  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+count_i1/CK->count_i1/Q                   FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  10      
+count[1]                                                  NET DELAY      0.280         3.746  1       
+i1_3_lut_4_lut/A->i1_3_lut_4_lut/Z        LUT4            A_TO_Z_DELAY   0.450         4.196  1       
+n2240                                                     NET DELAY      2.075         6.271  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
+ClockK                                                    NET DELAY      2.075         4.300  1       
+
+
+
+
+ ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i1/SR
@@ -1316,21 +1371,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i2/SR
@@ -1370,21 +1424,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i3/SR
@@ -1424,21 +1477,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i4/SR
@@ -1478,21 +1530,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i5/SR
@@ -1532,21 +1583,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i6/SR
@@ -1586,21 +1636,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i7/SR
@@ -1640,21 +1689,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i8/SR
@@ -1694,21 +1742,20 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i9/SR
@@ -1748,69 +1795,14 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
-ClockK                                                    NET DELAY      2.075         4.300  1       
-
-
-
-
- ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin       : reset_c/Q
-Path End         : controller/v_count__i0/SR
-Source Clock     : pll/lscc_pll_inst/Clk
-Destination Clock: ClockK
-Logic Level      : 2
-Delay Ratio      : 56.1% (route), 43.9% (logic)
-Clock Skew       : 2.225 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 2.448 ns  (Passed)
-
-  Destination Clock Arrival Time (ClockK:R#1)     0.000
-+ Generated Clock Source Latency                  2.225
-+ Destination Clock Uncertainty                   0.000
-+ Destination Clock Path Delay                    2.075
-+ Hold Time                                       0.477
----------------------------------------------   -------
-End-of-path required time( ns )                   3.823
-
-  Source Clock Arrival Time (pll/lscc_pll_inst/Clk:R#1)   0.000
-+ Source Clock Source Latency                             0.000
-+ Source Clock Path Delay                                 2.075
-+ Data Path Delay                                         4.196
--------------------------------------------------------   -----
-End-of-path arrival time( ns )                            6.271
-
- 
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-ins1/CLKHF                                HSOSC_CORE      CLOCK LATENCY  0.000         0.000  4       
-Clk                                                       NET DELAY      2.075         2.075  1       
-
-
-Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
-reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 

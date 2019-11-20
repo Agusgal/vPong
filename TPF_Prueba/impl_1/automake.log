@@ -1,234 +1,80 @@
 
-"C:/lscc/radiant/1.1/tcltk/windows/bin/tclsh" "TPF_Prueba_impl_1_synthesize.tcl"
+bitgen -w "TPF_Prueba_impl_1.udb" -f "TPF_Prueba_impl_1.t2b" 
+Loading TPF_Prueba_impl_1.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading udb from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
 
-synthesis -f TPF_Prueba_impl_1_lattice.synproj
-synthesis:  version Radiant Software (64-bit) 1.1.0.165.1
 
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 1.1.0.165.1
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Nov 18 14:06:29 2019
 
 
-Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f TPF_Prueba_impl_1_lattice.synproj -gui -msgset C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/promote.xml 
+Running DRC.
+DRC detected 0 errors and 0 warnings.
 
-INFO - synthesis: Lattice Synthesis Engine Launched.
-Synthesis options:
-The -a option is iCE40UP.
-The -t option is SG48.
-The -sp option is High-Performance_1.2V.
-The -p option is iCE40UP5K.
-                                                          
-
-
-##########################################################
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
 
 
-### Lattice Family     : iCE40UP
+Creating bit map...
+Saving bit stream in "C:\Users\Abril\Documents\GitHub\tpf-grupo-4\TPF_Prueba\impl_1\TPF_Prueba_impl_1.bin".
+
+ibisgen "TPF_Prueba_impl_1.udb" "C:/lscc/radiant/1.1/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 1.1.0.165.1
+
+Wed Nov 20 18:24:19 2019
+
+Loading TPF_Prueba_impl_1.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading udb from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+Created design models.
 
 
-### Device             : iCE40UP5K
+Generating: C:\Users\Abril\Documents\GitHub\tpf-grupo-4\TPF_Prueba\impl_1\IBIS\TPF_Prueba_impl_1.ibs
 
 
-### Package            : SG48
+    <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
 
+backanno "TPF_Prueba_impl_1.udb"  -o "TPF_Prueba_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
+backanno: version Radiant Software (64-bit) 1.1.0.165.1
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
 
-### Performance Grade  : High-Performance_1.2V
+Loading TPF_Prueba_impl_1.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Writing a verilog netlist based on the TPF_Prueba_impl_1 design file.
 
-
-                                                         
-
-
-INFO - User-Selected Strategy SettingsOptimization goal = Area
-Top-level module name = main.
-Target frequency = 1.000000 MHz.
-Maximum fanout = 1000.
-Timing path count = 3
-RWCheckOnRam = 0
-
-BRAM utilization = 100.000000 %
-DSP usage = true
-DSP utilization = 100.000000 %
-fsm_encoding_style = auto
-resolve_mixed_drivers = 0
-fix_gated_clocks = 1
-
-
-Mux style = auto (Default)
-Use Carry Chain = true
-carry_chain_length = 0
-Loop Limit = 1950.
-Use IO Insertion = TRUE
-Use IO Reg = AUTO
-
-Resource Sharing = TRUE
-Propagate Constants = TRUE
-Remove Duplicate Registers = TRUE
-Output HDL file name = TPF_Prueba_impl_1.vm.
-ROM style = auto
-RAM style = auto
-The -comp option is FALSE.
-The -syn option is FALSE.
--sdc option: SDC file input is C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc.
--path C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba (searchpath added)
--path C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll (searchpath added)
--path C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1 (searchpath added)
--path C:/lscc/radiant/1.1/ispfpga/ice40tp/data (searchpath added)
-Mixed language design
-Verilog design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Top.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/VGA.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBar.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBarMovement.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/ResetGame.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll/rtl/My_Pll.v
-Verilog design file = C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Points.v
-VHDL library = pmi
-VHDL design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Compile design.
-Compile Design Begin
-Analyzing Verilog file c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(1):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_addsub.v(40):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(2):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_add.v(50):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(3):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_complex_mult.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(4):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_counter.v(39):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(5):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_fifo.v(44):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(6):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_fifo_dc.v(47):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(7):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_mac.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(8):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_multaddsubsum.v(53):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(9):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_multaddsub.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(10):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_mult.v(51):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(11):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dp.v(48):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(12):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(13):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_rom.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(14):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_sub.v(50):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(15):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dp_be.v(49):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(16):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(17):analyzing included file . VERI-1328Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/top.v. VERI-1482
-Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/vga.v. VERI-1482
-Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/ballandbar.v. VERI-1482
-Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/ballandbarmovement.v. VERI-1482
-Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/resetgame.v. VERI-1482
-Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/my_pll/rtl/my_pll.v. VERI-1482
-Analyzing Verilog file c:/users/juan martin/documents/proyectosradiant/tpf_prueba/points.v. VERI-1482
-Analyzing VHDL file c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd(4):analyzing package . VHDL-1014unit main is not yet analyzed. VHDL-1485
-INFO - The default VHDL library search path is now ""C:/Users/Juan". VHDL-1504Top module language type = Verilog.
-Top module name (Verilog, mixed language): main
-INFO - "c:/users/juancompiling module . VERI-1018INFO - "C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756):compiling module . VERI-1018INFO - "c:/users/juancompiling module . VERI-1018INFO - "c:/users/juancompiling module . VERI-1018INFO - "C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428):compiling module . VERI-1018WARNING - "c:/users/juaninput port  is not connected on this instance. VDB-1013WARNING - "c:/users/juaninput port  is not connected on this instance. VDB-1013WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209INFO - "c:/users/juancompiling module . VERI-1018WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209INFO - "c:/users/juancompiling module . VERI-1018WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209INFO - "c:/users/juancompiling module . VERI-1018WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209INFO - "c:/users/juancompiling module . VERI-1018WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209WARNING - "c:/users/juanexpression size  truncated to fit in target size . VERI-1209INFO - "c:/users/juancompiling module . VERI-1018INFO - "c:/users/juancompiling module . VERI-1018INFO - "c:/users/juancompiling module . VERI-1018INFO - "c:/users/juancompiling module . VERI-1018INFO - "c:/users/juancompiling module . VERI-1018WARNING - "c:/users/juannet  does not have a driver. VDB-1002Loading device for application lse from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
-                                                         
-
-
-### Number of Logic Cells: 5280
-
-
-### Number of RAM Blocks: 30
-
-
-### Number of DSP Blocks: 8
-
-
-### Number of PLLs: 1
-
-
-### Number of IO Pins: 56
-
-
-##########################################################
-
-
-                                                         
-
-
-WARNING - No port matched 'Clk'.WARNING - Can't resolve object 'Clk' in constraint '"create_clock'.WARNING - Ignoring Constraint: "create_clock.WARNING - "c:/users/juaninput port  is not connected on this instance. VDB-1013WARNING - "c:/users/juaninput port  is not connected on this instance. VDB-1013WARNING - "c:/users/juannet  does not have a driver. VDB-1002WARNING - "c:/users/juannet  does not have a driver. VDB-1002######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
-######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
-WARNING - Bit 0 of Register \barrap1/y_place is stuck at ZeroWARNING - Bit 1 of Register \barrap1/y_place is stuck at ZeroWARNING - Bit 2 of Register \barrap1/y_place is stuck at ZeroWARNING - Bit 3 of Register \barrap1/y_place is stuck at ZeroWARNING - Bit 4 of Register \barrap1/y_place is stuck at ZeroWARNING - Bit 5 of Register \barrap1/y_place is stuck at ZeroWARNING - Bit 6 of Register \barrap1/y_place is stuck at Zero
-
-
-Mapped 8 multiplier(s)
-
-
-WARNING - "c:/users/juanRegister  is stuck at Zero. VDB-5013WARNING - Initial value found on instance \x_ball_6__I_0/der will be ignored.WARNING - Initial value found on instance \x_ball_6__I_0/y_place_i0 will be ignored.WARNING - Initial value found on instance \x_ball_6__I_0/y_place_i2 will be ignored.WARNING - Initial value found on instance \x_ball_6__I_0/y_place_i3 will be ignored.WARNING - Initial value found on instance \x_ball_6__I_0/y_place_i4 will be ignored.WARNING - Initial value found on instance \x_ball_6__I_0/y_place_i6 will be ignored.Initializing timer
-Starting design annotation....
-WARNING - "TheWARNING - "TheWARNING - "TheWARNING - "The
-Starting full timing analysis...
-Worst slack in design 50866
-Initializing timer
-Starting design annotation....
-WARNING - "TheWARNING - "TheWARNING - "TheWARNING - "The
-Starting full timing analysis...
-Worst slack in design 61074
-Initializing timer
-Starting design annotation....
-WARNING - "TheWARNING - "TheWARNING - "TheWARNING - "The
-Starting full timing analysis...
-Worst slack in design 53418
-Initializing timer
-Starting design annotation....
-WARNING - "TheWARNING - "TheWARNING - "TheWARNING - "The
-Starting full timing analysis...
-Worst slack in design 53418
-
-################### Begin Area Report (main)######################
-Number of register bits => 72 of 5280 (1 % )
-CCU2 => 86
-FD1P3XZ => 72
-HSOSC_CORE => 1
-IB => 4
-LUT4 => 473
-MAC16 => 8
-OB => 5
-PLL_B => 1
-################### End Area Report ##################
-Number of odd-length carry chains : 15
-Number of even-length carry chains : 5
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 4
-  Net : speeddef_5__N_11, loads : 1
-  Net : Speed, loads : 3
-  Net : Clk, loads : 1
-  Net : pll/lscc_pll_inst/ClockK, loads : 0
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : controller/y_count[4], loads : 21
-  Net : Res_Gen/n1028, loads : 21
-  Net : controller/y_count[5], loads : 20
-  Net : x_ball_6__I_0/x_ball[5], loads : 20
-  Net : n1059, loads : 20
-  Net : x_ball_6__I_0/x_ball[6], loads : 19
-  Net : controller/y_count[6], loads : 18
-  Net : x_ball_6__I_0/x_ball[4], loads : 18
-  Net : x_ball_6__I_0/x_ball[3], loads : 18
-  Net : x_ball_6__I_0/x_ball[2], loads : 18
-################### End Clock Report ##################
-
-Peak Memory Usage: 308.434  MB
-
---------------------------------------------------------------
-Total CPU time for LSE flow : 73.922  secs
-Total REAL time for LSE flow : 74.000  secs
---------------------------------------------------------------
-
-
-postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o TPF_Prueba_impl_1.udb TPF_Prueba_impl_1.vm -ldc "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc"
-POSTSYN: Post Synthesis Process Radiant Software (64-bit) 1.1.0.165.1
-Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o TPF_Prueba_impl_1.udb -ldc C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc -gui -msgset C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/promote.xml TPF_Prueba_impl_1.vm 
-   Architecture:     iCE40UP
-   Device:           iCE40UP5K
-   Package:          SG48
-   Performance:      High-Performance_1.2V
-Reading input file 'TPF_Prueba_impl_1.vm' ...
-Reading constraint file 'C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc' ...
-WARNING - No port matched 'Clk'.WARNING - Can't resolve object 'Clk' in constraint '"create_clock'.WARNING - Remove invalid constraint '"create_clock'.Removing unused logic...
-INFO - Signal barra1/blue_N_664[10]_2 undriven or does not drive anything - clippedINFO - Signal barra1/blue_N_664[9]_2 undriven or does not drive anything - clippedINFO - Signal barra1/blue_N_664[2]_2 undriven or does not drive anything - clippedINFO - Signal barra1/blue_N_664[1]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[9]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[8]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[7]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[6]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[5]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[4]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[3]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[2]_2 undriven or does not drive anything - clippedINFO - Signal controller/x_count[1]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_664[2]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_664[1]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[11]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[9]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[8]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[7]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[6]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[5]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[4]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[3]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[2]_2 undriven or does not drive anything - clippedINFO - Signal barra2/blue_N_721[1]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[6]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[5]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[4]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[3]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[2]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[1]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_269[0]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[6]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[5]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[4]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[3]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[2]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[1]_2 undriven or does not drive anything - clippedINFO - Signal x_ball_6__I_0/up_N_450[0]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[9]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[8]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[7]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[6]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[5]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[4]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[3]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[2]_2 undriven or does not drive anything - clippedINFO - Signal pelota/red_N_584[1]_2 undriven or does not drive anything - clippedINFO - Signal x_count[0] undriven or does not drive anything - clippedINFO - Signal y_bar2[6] undriven or does not drive anything - clippedINFO - Signal y_bar2[4] undriven or does not drive anything - clippedINFO - Signal speeddef[1] undriven or does not drive anything - clippedINFO - Signal speeddef[0] undriven or does not drive anything - clippedStarting design annotation....
-WARNING - "TheWriting output file 'TPF_Prueba_impl_1.udb'.
-POSTSYN finished successfully.
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 41 MB
-
-
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt "TPF_Prueba_impl_1.tws" "TPF_Prueba_impl_1_syn.udb" 
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt TPF_Prueba_impl_1.tws TPF_Prueba_impl_1_syn.udb -gui
-Starting design reading...
-Initializing timer
-Starting design annotation....
-WARNING - "The
-Starting full timing analysis...
-
-STA Runtime and Peak Memory Usage :
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 48 MB
-
+Writing Verilog netlist to file TPF_Prueba_impl_1_vo.vo
+Writing SDF timing to file TPF_Prueba_impl_1_vo.sdf
+Backanno finished with 0 posted error messages.
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 108 MB

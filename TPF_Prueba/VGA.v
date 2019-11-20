@@ -13,9 +13,11 @@ module VGA(clk,Reset,h_sync,v_sync,h_count,v_count);
 	localparam VSYNC_START=479+1;
 	localparam HBPORCH_START=639+16+64;
 	localparam VBPORCH_START=479+1+3;
+	
 	//Generando h_sync y v_sync
 	assign h_sync = ~( (h_count >= HSYNC_START) & (h_count < HBPORCH_START ) );
 	assign v_sync = ~( (v_count >= VSYNC_START) & (v_count < VBPORCH_START ) );
+	
 	//Counter
 	always @(posedge clk) begin
 		if (Reset == 0) begin
@@ -31,6 +33,6 @@ module VGA(clk,Reset,h_sync,v_sync,h_count,v_count);
 			v_count <= v_count +1;
 			end
 		else			
-			h_count<=h_count +1;
+			h_count <= h_count +1;
 		end
 endmodule;

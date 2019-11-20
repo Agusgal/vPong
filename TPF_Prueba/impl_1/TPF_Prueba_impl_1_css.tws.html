@@ -46,7 +46,7 @@ if (a)
 <A name="timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
 
-Mon Nov 18 14:07:45 2019
+Wed Nov 20 18:23:30 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -157,7 +157,7 @@ Clock Domain Crossing
 
 <A name="Timing_rpt_ConstraintCoverage"></A><B><U><big>3.1.1  Constraint Coverage</big></U></B>
 
-Constraint Coverage: 6.94564%
+Constraint Coverage: 6.6335%
 
 <A name="Timing_rpt_Errors"></A><B><U><big>3.1.2  Timing Errors</big></U></B>
 
@@ -183,7 +183,7 @@ Total Negative Slack: 57.315 ns (setup), 0.000 ns (hold)
 <A name="Timing_rpt_SetupSummaryConstraint_2"></A><A href=#Timing_rpt_SetupDetailedConstraint_2><FONT COLOR=red>source [get_pins {pll/lscc_pll_inst/u_P</FONT></A>                                                                                                    
 <A name="Timing_rpt_SetupSummaryConstraint_2"></A><A href=#Timing_rpt_SetupDetailedConstraint_2><FONT COLOR=red>LL_B/REFERENCECLK}] -multiply_by 21 -di</FONT></A>                                                                                                    
 <A name="Timing_rpt_SetupSummaryConstraint_2"></A><A href=#Timing_rpt_SetupDetailedConstraint_2><FONT COLOR=red>vide_by 8 [get_pins {pll/lscc_pll_inst/</FONT></A>                                                                                                    
-<A name="Timing_rpt_SetupSummaryConstraint_2"></A><A href=#Timing_rpt_SetupDetailedConstraint_2><FONT COLOR=red>u_PLL_B/OUTGLOBAL }] </FONT></A>                   |    <FONT COLOR=red>3.968 ns </FONT>|   <FONT COLOR=red>-1.084 ns </FONT>|    <FONT COLOR=red>3</FONT>   |   <FONT COLOR=red>12.382 ns </FONT>|  <FONT COLOR=red>80.762 MHz </FONT>|       <FONT COLOR=red>50</FONT>       |       <FONT COLOR=red>20</FONT>       
+<A name="Timing_rpt_SetupSummaryConstraint_2"></A><A href=#Timing_rpt_SetupDetailedConstraint_2><FONT COLOR=red>u_PLL_B/OUTGLOBAL }] </FONT></A>                   |    <FONT COLOR=red>3.968 ns </FONT>|   <FONT COLOR=red>-1.084 ns </FONT>|    <FONT COLOR=red>3</FONT>   |   <FONT COLOR=red>12.382 ns </FONT>|  <FONT COLOR=red>80.762 MHz </FONT>|       <FONT COLOR=red>51</FONT>       |       <FONT COLOR=red>20</FONT>       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 <A name="Timing_rpt_SetupCriticalEndpointSummary"></A><B><U><big>3.2.2  Setup Critical Endpoint Summary </big></U></B>
@@ -194,13 +194,13 @@ Total Negative Slack: 57.315 ns (setup), 0.000 ns (hold)
 reset_c/D                                |  -12.887 ns 
 count_i1/D                               |  -12.887 ns 
 count_i0/D                               |  -12.887 ns 
-controller/h_count_588__i9/SR            |   -1.085 ns 
-controller/h_count_588__i8/SR            |   -1.085 ns 
-controller/h_count_588__i7/SR            |   -1.085 ns 
-controller/h_count_588__i6/SR            |   -1.085 ns 
-controller/h_count_588__i5/SR            |   -1.085 ns 
-controller/h_count_588__i4/SR            |   -1.085 ns 
-controller/h_count_588__i3/SR            |   -1.085 ns 
+controller/h_count_646__i5/SR            |   -1.085 ns 
+controller/h_count_646__i4/SR            |   -1.085 ns 
+controller/h_count_646__i3/SR            |   -1.085 ns 
+controller/h_count_646__i2/SR            |   -1.085 ns 
+controller/h_count_646__i1/SR            |   -1.085 ns 
+controller/h_count_646__i9/SR            |   -1.085 ns 
+controller/h_count_646__i0/SR            |   -1.085 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|          23 
@@ -224,7 +224,7 @@ Setup # of endpoints with negative slack:|          23
 <A name="Timing_rpt_HoldSummaryConstraint_2"></A><A href=#Timing_rpt_HoldDetailedConstraint_2>source [get_pins {pll/lscc_pll_inst/u_P</A>                                                                                                    
 <A name="Timing_rpt_HoldSummaryConstraint_2"></A><A href=#Timing_rpt_HoldDetailedConstraint_2>LL_B/REFERENCECLK}] -multiply_by 21 -di</A>                                                                                                    
 <A name="Timing_rpt_HoldSummaryConstraint_2"></A><A href=#Timing_rpt_HoldDetailedConstraint_2>vide_by 8 [get_pins {pll/lscc_pll_inst/</A>                                                                                                    
-<A name="Timing_rpt_HoldSummaryConstraint_2"></A><A href=#Timing_rpt_HoldDetailedConstraint_2>u_PLL_B/OUTGLOBAL }] </A>                   |    0.000 ns |    2.448 ns |    2   |        ---- |        ---- |       50       |        0       
+<A name="Timing_rpt_HoldSummaryConstraint_2"></A><A href=#Timing_rpt_HoldDetailedConstraint_2>u_PLL_B/OUTGLOBAL }] </A>                   |    0.000 ns |    1.971 ns |    2   |        ---- |        ---- |       51       |        0       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 <A name="Timing_rpt_HoldCriticalEndpointSummary"></A><B><U><big>3.3.2  Hold Critical Endpoint Summary </big></U></B>
@@ -232,6 +232,7 @@ Setup # of endpoints with negative slack:|          23
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
+Pas_Gen/pausa_c/D                        |    1.971 ns 
 controller/v_count__i0/SR                |    2.448 ns 
 controller/v_count__i9/SR                |    2.448 ns 
 controller/v_count__i8/SR                |    2.448 ns 
@@ -241,7 +242,6 @@ controller/v_count__i5/SR                |    2.448 ns
 controller/v_count__i4/SR                |    2.448 ns 
 controller/v_count__i3/SR                |    2.448 ns 
 controller/v_count__i2/SR                |    2.448 ns 
-controller/v_count__i1/SR                |    2.448 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -256,8 +256,8 @@ Clocked but unconstrained timing start points
 -------------------------------------------------------------------
         Listing 10 Start Points         |           Type           
 -------------------------------------------------------------------
-x_ball_6__I_0/up_c/Q                    |    No arrival or required
 x_ball_6__I_0/der_c/Q                   |    No arrival or required
+x_ball_6__I_0/up_c/Q                    |    No arrival or required
 x_ball_6__I_0/x_place_i6/Q              |    No arrival or required
 x_ball_6__I_0/x_place_i5/Q              |    No arrival or required
 x_ball_6__I_0/x_place_i4/Q              |    No arrival or required
@@ -290,7 +290,7 @@ barrap1/x_place_i4/D                    |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        83
+ts                                      |                        84
                                         |                          
 -------------------------------------------------------------------
 
@@ -307,12 +307,13 @@ create_generated_clock,
 ...
 
 -------------------------------------------------------------------
-     Listing 9 Start or End Points      |           Type           
+     Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
 der1                                    |                     input
 izq1                                    |                     input
 der2                                    |                     input
 izq2                                    |                     input
+pause                                   |                     input
 h_sync                                  |                    output
 v_sync                                  |                    output
 red                                     |                    output
@@ -320,7 +321,7 @@ green                                   |                    output
 blue                                    |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                         9
+Number of I/O ports without constraint  |                        10
                                         |                          
 -------------------------------------------------------------------
 
@@ -329,12 +330,12 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 6 Instance(s)          |           Type           
 -------------------------------------------------------------------
-speeddef_587__i1                        |                  No Clock
-speeddef_587__i4                        |                  No Clock
-speeddef_587__i5                        |                  No Clock
-speeddef_587__i6                        |                  No Clock
-speeddef_587__i3                        |                  No Clock
-speeddef_587__i2                        |                  No Clock
+speeddef__i0                            |                  No Clock
+speeddef__i1                            |                  No Clock
+speeddef__i5                            |                  No Clock
+speeddef__i4                            |                  No Clock
+speeddef__i3                            |                  No Clock
+speeddef__i2                            |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
@@ -422,7 +423,7 @@ Source Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -472,13 +473,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i1_2_lut_3_lut/C",
-            "phy_name":"i1_2_lut_3_lut/C"
+            "log_name":"controller/i2_2_lut_3_lut/C",
+            "phy_name":"i2_2_lut_3_lut/C"
         },
         "pin1":
         {
-            "log_name":"controller/i1_2_lut_3_lut/Z",
-            "phy_name":"i1_2_lut_3_lut/Z"
+            "log_name":"controller/i2_2_lut_3_lut/Z",
+            "phy_name":"i2_2_lut_3_lut/Z"
         },
         "arrive":6.448,
         "delay":0.477
@@ -487,8 +488,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n12327",
-            "phy_name":"n12327"
+            "log_name":"controller/n6710",
+            "phy_name":"controller/n6710"
         },
         "arrive":8.523,
         "delay":2.075
@@ -497,13 +498,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i4_4_lut_adj_273/C",
-            "phy_name":"i4_4_lut_adj_273/C"
+            "log_name":"controller/i1_2_lut_adj_152/B",
+            "phy_name":"i1_2_lut_adj_152/B"
         },
         "pin1":
         {
-            "log_name":"i4_4_lut_adj_273/Z",
-            "phy_name":"i4_4_lut_adj_273/Z"
+            "log_name":"controller/i1_2_lut_adj_152/Z",
+            "phy_name":"i1_2_lut_adj_152/Z"
         },
         "arrive":9.000,
         "delay":0.477
@@ -512,8 +513,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n10_adj_1064",
-            "phy_name":"n10_adj_1064"
+            "log_name":"n48",
+            "phy_name":"n48"
         },
         "arrive":11.075,
         "delay":2.075
@@ -522,13 +523,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i5_4_lut/B",
-            "phy_name":"i5_4_lut/B"
+            "log_name":"controller/i4_4_lut/C",
+            "phy_name":"i4_4_lut/C"
         },
         "pin1":
         {
-            "log_name":"i5_4_lut/Z",
-            "phy_name":"i5_4_lut/Z"
+            "log_name":"controller/i4_4_lut/Z",
+            "phy_name":"i4_4_lut/Z"
         },
         "arrive":11.552,
         "delay":0.477
@@ -537,8 +538,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"speeddef_5__N_11",
-            "phy_name":"speeddef_5__N_11"
+            "log_name":"v_sync_N_70",
+            "phy_name":"v_sync_N_70"
         },
         "arrive":13.627,
         "delay":2.075
@@ -547,13 +548,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i25_4_lut/B",
-            "phy_name":"i25_4_lut/B"
+            "log_name":"controller/i1_4_lut/B",
+            "phy_name":"i1_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i25_4_lut/Z",
-            "phy_name":"i25_4_lut/Z"
+            "log_name":"controller/i1_4_lut/Z",
+            "phy_name":"i1_4_lut/Z"
         },
         "arrive":14.104,
         "delay":0.477
@@ -572,13 +573,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i14_3_lut_3_lut/B",
-            "phy_name":"i14_3_lut_3_lut/B"
+            "log_name":"i13_3_lut_4_lut_3_lut/A",
+            "phy_name":"i13_3_lut_4_lut_3_lut/A"
         },
         "pin1":
         {
-            "log_name":"i14_3_lut_3_lut/Z",
-            "phy_name":"i14_3_lut_3_lut/Z"
+            "log_name":"i13_3_lut_4_lut_3_lut/Z",
+            "phy_name":"i13_3_lut_4_lut_3_lut/Z"
         },
         "arrive":16.656,
         "delay":0.477
@@ -587,8 +588,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n6_adj_1072",
-            "phy_name":"n6_adj_1072"
+            "log_name":"n19691",
+            "phy_name":"n19691"
         },
         "arrive":18.731,
         "delay":2.075
@@ -600,19 +601,23 @@ Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 controller/v_count__i8/CK->controller/v_count__i8/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  13      
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  14      
 y_count[8]                                                NET DELAY      0.280         5.971  1       
-controller/i1_2_lut_3_lut/C->controller/i1_2_lut_3_lut/Z
+controller/i2_2_lut_3_lut/C->controller/i2_2_lut_3_lut/Z
                                           LUT4            C_TO_Z_DELAY   0.477         6.448  3       
-n12327                                                    NET DELAY      2.075         8.523  1       
-i4_4_lut_adj_273/C->i4_4_lut_adj_273/Z    LUT4            C_TO_Z_DELAY   0.477         9.000  1       
-n10_adj_1064                                              NET DELAY      2.075        11.075  1       
-i5_4_lut/B->i5_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.552  7       
-speeddef_5__N_11                                          NET DELAY      2.075        13.627  1       
-i25_4_lut/B->i25_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        14.104  46      
+controller/n6710                                          NET DELAY      2.075         8.523  1       
+controller/i1_2_lut_adj_152/B->controller/i1_2_lut_adj_152/Z
+                                          LUT4            B_TO_Z_DELAY   0.477         9.000  2       
+n48                                                       NET DELAY      2.075        11.075  1       
+controller/i4_4_lut/C->controller/i4_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        11.552  8       
+v_sync_N_70                                               NET DELAY      2.075        13.627  1       
+controller/i1_4_lut/B->controller/i1_4_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.477        14.104  46      
 Speed                                                     NET DELAY      2.075        16.179  1       
-i14_3_lut_3_lut/B->i14_3_lut_3_lut/Z      LUT4            B_TO_Z_DELAY   0.477        16.656  1       
-n6_adj_1072                                               NET DELAY      2.075        18.731  1       
+i13_3_lut_4_lut_3_lut/A->i13_3_lut_4_lut_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.477        16.656  1       
+n19691                                                    NET DELAY      2.075        18.731  1       
 
 
 Destination Clock Path
@@ -715,7 +720,7 @@ Source Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -765,13 +770,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i1_2_lut_3_lut/C",
-            "phy_name":"i1_2_lut_3_lut/C"
+            "log_name":"controller/i2_2_lut_3_lut/C",
+            "phy_name":"i2_2_lut_3_lut/C"
         },
         "pin1":
         {
-            "log_name":"controller/i1_2_lut_3_lut/Z",
-            "phy_name":"i1_2_lut_3_lut/Z"
+            "log_name":"controller/i2_2_lut_3_lut/Z",
+            "phy_name":"i2_2_lut_3_lut/Z"
         },
         "arrive":6.448,
         "delay":0.477
@@ -780,8 +785,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n12327",
-            "phy_name":"n12327"
+            "log_name":"controller/n6710",
+            "phy_name":"controller/n6710"
         },
         "arrive":8.523,
         "delay":2.075
@@ -790,13 +795,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i4_4_lut_adj_273/C",
-            "phy_name":"i4_4_lut_adj_273/C"
+            "log_name":"controller/i1_2_lut_adj_152/B",
+            "phy_name":"i1_2_lut_adj_152/B"
         },
         "pin1":
         {
-            "log_name":"i4_4_lut_adj_273/Z",
-            "phy_name":"i4_4_lut_adj_273/Z"
+            "log_name":"controller/i1_2_lut_adj_152/Z",
+            "phy_name":"i1_2_lut_adj_152/Z"
         },
         "arrive":9.000,
         "delay":0.477
@@ -805,8 +810,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n10_adj_1064",
-            "phy_name":"n10_adj_1064"
+            "log_name":"n48",
+            "phy_name":"n48"
         },
         "arrive":11.075,
         "delay":2.075
@@ -815,13 +820,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i5_4_lut/B",
-            "phy_name":"i5_4_lut/B"
+            "log_name":"controller/i4_4_lut/C",
+            "phy_name":"i4_4_lut/C"
         },
         "pin1":
         {
-            "log_name":"i5_4_lut/Z",
-            "phy_name":"i5_4_lut/Z"
+            "log_name":"controller/i4_4_lut/Z",
+            "phy_name":"i4_4_lut/Z"
         },
         "arrive":11.552,
         "delay":0.477
@@ -830,8 +835,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"speeddef_5__N_11",
-            "phy_name":"speeddef_5__N_11"
+            "log_name":"v_sync_N_70",
+            "phy_name":"v_sync_N_70"
         },
         "arrive":13.627,
         "delay":2.075
@@ -840,13 +845,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i25_4_lut/B",
-            "phy_name":"i25_4_lut/B"
+            "log_name":"controller/i1_4_lut/B",
+            "phy_name":"i1_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i25_4_lut/Z",
-            "phy_name":"i25_4_lut/Z"
+            "log_name":"controller/i1_4_lut/Z",
+            "phy_name":"i1_4_lut/Z"
         },
         "arrive":14.104,
         "delay":0.477
@@ -865,13 +870,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2878_2_lut_3_lut/B",
-            "phy_name":"i2878_2_lut_3_lut/B"
+            "log_name":"i1_3_lut/A",
+            "phy_name":"i1_3_lut/A"
         },
         "pin1":
         {
-            "log_name":"i2878_2_lut_3_lut/Z",
-            "phy_name":"i2878_2_lut_3_lut/Z"
+            "log_name":"i1_3_lut/Z",
+            "phy_name":"i1_3_lut/Z"
         },
         "arrive":16.656,
         "delay":0.477
@@ -880,8 +885,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n3553",
-            "phy_name":"n3553"
+            "log_name":"n2241",
+            "phy_name":"n2241"
         },
         "arrive":18.731,
         "delay":2.075
@@ -893,19 +898,22 @@ Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 controller/v_count__i8/CK->controller/v_count__i8/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  13      
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  14      
 y_count[8]                                                NET DELAY      0.280         5.971  1       
-controller/i1_2_lut_3_lut/C->controller/i1_2_lut_3_lut/Z
+controller/i2_2_lut_3_lut/C->controller/i2_2_lut_3_lut/Z
                                           LUT4            C_TO_Z_DELAY   0.477         6.448  3       
-n12327                                                    NET DELAY      2.075         8.523  1       
-i4_4_lut_adj_273/C->i4_4_lut_adj_273/Z    LUT4            C_TO_Z_DELAY   0.477         9.000  1       
-n10_adj_1064                                              NET DELAY      2.075        11.075  1       
-i5_4_lut/B->i5_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.552  7       
-speeddef_5__N_11                                          NET DELAY      2.075        13.627  1       
-i25_4_lut/B->i25_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        14.104  46      
+controller/n6710                                          NET DELAY      2.075         8.523  1       
+controller/i1_2_lut_adj_152/B->controller/i1_2_lut_adj_152/Z
+                                          LUT4            B_TO_Z_DELAY   0.477         9.000  2       
+n48                                                       NET DELAY      2.075        11.075  1       
+controller/i4_4_lut/C->controller/i4_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        11.552  8       
+v_sync_N_70                                               NET DELAY      2.075        13.627  1       
+controller/i1_4_lut/B->controller/i1_4_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.477        14.104  46      
 Speed                                                     NET DELAY      2.075        16.179  1       
-i2878_2_lut_3_lut/B->i2878_2_lut_3_lut/Z  LUT4            B_TO_Z_DELAY   0.477        16.656  1       
-n3553                                                     NET DELAY      2.075        18.731  1       
+i1_3_lut/A->i1_3_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        16.656  1       
+n2241                                                     NET DELAY      2.075        18.731  1       
 
 
 Destination Clock Path
@@ -1008,7 +1016,7 @@ Source Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -1058,13 +1066,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i1_2_lut_3_lut/C",
-            "phy_name":"i1_2_lut_3_lut/C"
+            "log_name":"controller/i2_2_lut_3_lut/C",
+            "phy_name":"i2_2_lut_3_lut/C"
         },
         "pin1":
         {
-            "log_name":"controller/i1_2_lut_3_lut/Z",
-            "phy_name":"i1_2_lut_3_lut/Z"
+            "log_name":"controller/i2_2_lut_3_lut/Z",
+            "phy_name":"i2_2_lut_3_lut/Z"
         },
         "arrive":6.448,
         "delay":0.477
@@ -1073,8 +1081,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n12327",
-            "phy_name":"n12327"
+            "log_name":"controller/n6710",
+            "phy_name":"controller/n6710"
         },
         "arrive":8.523,
         "delay":2.075
@@ -1083,13 +1091,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i4_4_lut_adj_273/C",
-            "phy_name":"i4_4_lut_adj_273/C"
+            "log_name":"controller/i1_2_lut_adj_152/B",
+            "phy_name":"i1_2_lut_adj_152/B"
         },
         "pin1":
         {
-            "log_name":"i4_4_lut_adj_273/Z",
-            "phy_name":"i4_4_lut_adj_273/Z"
+            "log_name":"controller/i1_2_lut_adj_152/Z",
+            "phy_name":"i1_2_lut_adj_152/Z"
         },
         "arrive":9.000,
         "delay":0.477
@@ -1098,8 +1106,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n10_adj_1064",
-            "phy_name":"n10_adj_1064"
+            "log_name":"n48",
+            "phy_name":"n48"
         },
         "arrive":11.075,
         "delay":2.075
@@ -1108,13 +1116,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i5_4_lut/B",
-            "phy_name":"i5_4_lut/B"
+            "log_name":"controller/i4_4_lut/C",
+            "phy_name":"i4_4_lut/C"
         },
         "pin1":
         {
-            "log_name":"i5_4_lut/Z",
-            "phy_name":"i5_4_lut/Z"
+            "log_name":"controller/i4_4_lut/Z",
+            "phy_name":"i4_4_lut/Z"
         },
         "arrive":11.552,
         "delay":0.477
@@ -1123,8 +1131,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"speeddef_5__N_11",
-            "phy_name":"speeddef_5__N_11"
+            "log_name":"v_sync_N_70",
+            "phy_name":"v_sync_N_70"
         },
         "arrive":13.627,
         "delay":2.075
@@ -1133,13 +1141,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i25_4_lut/B",
-            "phy_name":"i25_4_lut/B"
+            "log_name":"controller/i1_4_lut/B",
+            "phy_name":"i1_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i25_4_lut/Z",
-            "phy_name":"i25_4_lut/Z"
+            "log_name":"controller/i1_4_lut/Z",
+            "phy_name":"i1_4_lut/Z"
         },
         "arrive":14.104,
         "delay":0.477
@@ -1158,13 +1166,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1567_4_lut_4_lut/C",
-            "phy_name":"i1567_4_lut_4_lut/C"
+            "log_name":"i1_4_lut_adj_230/B",
+            "phy_name":"i1_4_lut_adj_230/B"
         },
         "pin1":
         {
-            "log_name":"i1567_4_lut_4_lut/Z",
-            "phy_name":"i1567_4_lut_4_lut/Z"
+            "log_name":"i1_4_lut_adj_230/Z",
+            "phy_name":"i1_4_lut_adj_230/Z"
         },
         "arrive":16.656,
         "delay":0.477
@@ -1173,8 +1181,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2250",
-            "phy_name":"n2250"
+            "log_name":"n2243",
+            "phy_name":"n2243"
         },
         "arrive":18.731,
         "delay":2.075
@@ -1186,19 +1194,22 @@ Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 controller/v_count__i8/CK->controller/v_count__i8/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  13      
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  14      
 y_count[8]                                                NET DELAY      0.280         5.971  1       
-controller/i1_2_lut_3_lut/C->controller/i1_2_lut_3_lut/Z
+controller/i2_2_lut_3_lut/C->controller/i2_2_lut_3_lut/Z
                                           LUT4            C_TO_Z_DELAY   0.477         6.448  3       
-n12327                                                    NET DELAY      2.075         8.523  1       
-i4_4_lut_adj_273/C->i4_4_lut_adj_273/Z    LUT4            C_TO_Z_DELAY   0.477         9.000  1       
-n10_adj_1064                                              NET DELAY      2.075        11.075  1       
-i5_4_lut/B->i5_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.552  7       
-speeddef_5__N_11                                          NET DELAY      2.075        13.627  1       
-i25_4_lut/B->i25_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477        14.104  46      
+controller/n6710                                          NET DELAY      2.075         8.523  1       
+controller/i1_2_lut_adj_152/B->controller/i1_2_lut_adj_152/Z
+                                          LUT4            B_TO_Z_DELAY   0.477         9.000  2       
+n48                                                       NET DELAY      2.075        11.075  1       
+controller/i4_4_lut/C->controller/i4_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477        11.552  8       
+v_sync_N_70                                               NET DELAY      2.075        13.627  1       
+controller/i1_4_lut/B->controller/i1_4_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.477        14.104  46      
 Speed                                                     NET DELAY      2.075        16.179  1       
-i1567_4_lut_4_lut/C->i1567_4_lut_4_lut/Z  LUT4            C_TO_Z_DELAY   0.477        16.656  1       
-n2250                                                     NET DELAY      2.075        18.731  1       
+i1_4_lut_adj_230/B->i1_4_lut_adj_230/Z    LUT4            B_TO_Z_DELAY   0.477        16.656  1       
+n2243                                                     NET DELAY      2.075        18.731  1       
 
 
 Destination Clock Path
@@ -1245,7 +1256,7 @@ Clk                                                       NET DELAY      2.075  
 
 <A name="Timing_rpt_SetupDetailedConstraint_2"></A><A href=#Timing_rpt_SetupSummaryConstraint_2>4.1.2  Setup path details for constraint: create_generated_clock -name {ClockK} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 21 -divide_by 8 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </A>
 ----------------------------------------------------------------------
-50 endpoints scored, 20 timing errors detected.
+51 endpoints scored, 20 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
@@ -1254,7 +1265,7 @@ Clk                                                       NET DELAY      2.075  
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i0/SR
+Path End         : controller/h_count_646__i6/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -1329,8 +1340,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i0/SR",
-        "phy_name":"h_count_588__i0/SR"
+        "log_name":"controller/h_count_646__i6/SR",
+        "phy_name":"h_count_646__i6/SR"
     },
     "path_sections":[
     {
@@ -1362,13 +1373,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -1377,8 +1388,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -1387,13 +1398,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -1402,8 +1413,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -1416,11 +1427,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -1436,8 +1446,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i0/CK",
-        "phy_name":"h_count_588__i0/CK"
+        "log_name":"controller/h_count_646__i6/CK",
+        "phy_name":"h_count_646__i6/CK"
     },
     "path_sections":[
     {
@@ -1456,7 +1466,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -1465,7 +1475,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i1/SR
+Path End         : controller/h_count_646__i7/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -1540,8 +1550,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i1/SR",
-        "phy_name":"h_count_588__i1/SR"
+        "log_name":"controller/h_count_646__i7/SR",
+        "phy_name":"h_count_646__i7/SR"
     },
     "path_sections":[
     {
@@ -1573,13 +1583,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -1588,8 +1598,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -1598,13 +1608,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -1613,8 +1623,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -1627,11 +1637,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -1647,8 +1656,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i1/CK",
-        "phy_name":"h_count_588__i1/CK"
+        "log_name":"controller/h_count_646__i7/CK",
+        "phy_name":"h_count_646__i7/CK"
     },
     "path_sections":[
     {
@@ -1667,7 +1676,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -1676,7 +1685,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i2/SR
+Path End         : controller/h_count_646__i8/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -1751,8 +1760,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i2/SR",
-        "phy_name":"h_count_588__i2/SR"
+        "log_name":"controller/h_count_646__i8/SR",
+        "phy_name":"h_count_646__i8/SR"
     },
     "path_sections":[
     {
@@ -1784,13 +1793,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -1799,8 +1808,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -1809,13 +1818,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -1824,8 +1833,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -1838,11 +1847,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -1858,8 +1866,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i2/CK",
-        "phy_name":"h_count_588__i2/CK"
+        "log_name":"controller/h_count_646__i8/CK",
+        "phy_name":"h_count_646__i8/CK"
     },
     "path_sections":[
     {
@@ -1878,7 +1886,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -1887,7 +1895,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i3/SR
+Path End         : controller/h_count_646__i0/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -1962,8 +1970,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i3/SR",
-        "phy_name":"h_count_588__i3/SR"
+        "log_name":"controller/h_count_646__i0/SR",
+        "phy_name":"h_count_646__i0/SR"
     },
     "path_sections":[
     {
@@ -1995,13 +2003,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -2010,8 +2018,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -2020,13 +2028,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -2035,8 +2043,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -2049,11 +2057,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -2069,8 +2076,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i3/CK",
-        "phy_name":"h_count_588__i3/CK"
+        "log_name":"controller/h_count_646__i0/CK",
+        "phy_name":"h_count_646__i0/CK"
     },
     "path_sections":[
     {
@@ -2089,7 +2096,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -2098,7 +2105,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i4/SR
+Path End         : controller/h_count_646__i9/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -2173,8 +2180,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i4/SR",
-        "phy_name":"h_count_588__i4/SR"
+        "log_name":"controller/h_count_646__i9/SR",
+        "phy_name":"h_count_646__i9/SR"
     },
     "path_sections":[
     {
@@ -2206,13 +2213,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -2221,8 +2228,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -2231,13 +2238,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -2246,8 +2253,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -2260,11 +2267,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -2280,8 +2286,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i4/CK",
-        "phy_name":"h_count_588__i4/CK"
+        "log_name":"controller/h_count_646__i9/CK",
+        "phy_name":"h_count_646__i9/CK"
     },
     "path_sections":[
     {
@@ -2300,7 +2306,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -2309,7 +2315,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i5/SR
+Path End         : controller/h_count_646__i1/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -2384,8 +2390,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i5/SR",
-        "phy_name":"h_count_588__i5/SR"
+        "log_name":"controller/h_count_646__i1/SR",
+        "phy_name":"h_count_646__i1/SR"
     },
     "path_sections":[
     {
@@ -2417,13 +2423,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -2432,8 +2438,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -2442,13 +2448,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -2457,8 +2463,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -2471,11 +2477,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -2491,8 +2496,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i5/CK",
-        "phy_name":"h_count_588__i5/CK"
+        "log_name":"controller/h_count_646__i1/CK",
+        "phy_name":"h_count_646__i1/CK"
     },
     "path_sections":[
     {
@@ -2511,7 +2516,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -2520,7 +2525,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i6/SR
+Path End         : controller/h_count_646__i2/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -2595,8 +2600,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i6/SR",
-        "phy_name":"h_count_588__i6/SR"
+        "log_name":"controller/h_count_646__i2/SR",
+        "phy_name":"h_count_646__i2/SR"
     },
     "path_sections":[
     {
@@ -2628,13 +2633,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -2643,8 +2648,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -2653,13 +2658,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -2668,8 +2673,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -2682,11 +2687,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -2702,8 +2706,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i6/CK",
-        "phy_name":"h_count_588__i6/CK"
+        "log_name":"controller/h_count_646__i2/CK",
+        "phy_name":"h_count_646__i2/CK"
     },
     "path_sections":[
     {
@@ -2722,7 +2726,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -2731,7 +2735,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i7/SR
+Path End         : controller/h_count_646__i3/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -2806,8 +2810,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i7/SR",
-        "phy_name":"h_count_588__i7/SR"
+        "log_name":"controller/h_count_646__i3/SR",
+        "phy_name":"h_count_646__i3/SR"
     },
     "path_sections":[
     {
@@ -2839,13 +2843,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -2854,8 +2858,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -2864,13 +2868,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -2879,8 +2883,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -2893,11 +2897,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -2913,8 +2916,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i7/CK",
-        "phy_name":"h_count_588__i7/CK"
+        "log_name":"controller/h_count_646__i3/CK",
+        "phy_name":"h_count_646__i3/CK"
     },
     "path_sections":[
     {
@@ -2933,7 +2936,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -2942,7 +2945,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i8/SR
+Path End         : controller/h_count_646__i4/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -3017,8 +3020,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i8/SR",
-        "phy_name":"h_count_588__i8/SR"
+        "log_name":"controller/h_count_646__i4/SR",
+        "phy_name":"h_count_646__i4/SR"
     },
     "path_sections":[
     {
@@ -3050,13 +3053,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -3065,8 +3068,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -3075,13 +3078,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -3090,8 +3093,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -3104,11 +3107,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -3124,8 +3126,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i8/CK",
-        "phy_name":"h_count_588__i8/CK"
+        "log_name":"controller/h_count_646__i4/CK",
+        "phy_name":"h_count_646__i4/CK"
     },
     "path_sections":[
     {
@@ -3144,7 +3146,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -3153,7 +3155,7 @@ ClockK                                                    NET DELAY      2.075  
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
-Path End         : controller/h_count_588__i9/SR
+Path End         : controller/h_count_646__i5/SR
 Source Clock     : pll/lscc_pll_inst/Clk
 Destination Clock: ClockK
 Logic Level      : 3
@@ -3228,8 +3230,8 @@ Data path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i9/SR",
-        "phy_name":"h_count_588__i9/SR"
+        "log_name":"controller/h_count_646__i5/SR",
+        "phy_name":"h_count_646__i5/SR"
     },
     "path_sections":[
     {
@@ -3261,13 +3263,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.223,
         "delay":0.477
@@ -3276,8 +3278,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.298,
         "delay":2.075
@@ -3286,13 +3288,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i13223_4_lut/B",
-            "phy_name":"i13223_4_lut/B"
+            "log_name":"i21300_4_lut/B",
+            "phy_name":"i21300_4_lut/B"
         },
         "pin1":
         {
-            "log_name":"i13223_4_lut/Z",
-            "phy_name":"i13223_4_lut/Z"
+            "log_name":"i21300_4_lut/Z",
+            "phy_name":"i21300_4_lut/Z"
         },
         "arrive":6.748,
         "delay":0.450
@@ -3301,8 +3303,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1059",
-            "phy_name":"n1059"
+            "log_name":"n3083",
+            "phy_name":"n3083"
         },
         "arrive":8.823,
         "delay":2.075
@@ -3315,11 +3317,10 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.477         4.223  11      
-n1071                                                     NET DELAY      2.075         6.298  1       
-i13223_4_lut/B->i13223_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
-n1059                                                     NET DELAY      2.075         8.823  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.477         4.223  11      
+n1084                                                     NET DELAY      2.075         6.298  1       
+i21300_4_lut/B->i21300_4_lut/Z            LUT4            B_TO_Z_DELAY   0.450         6.748  20      
+n3083                                                     NET DELAY      2.075         8.823  1       
 
 
 Destination Clock Path
@@ -3335,8 +3336,8 @@ Destination Clock Path
     "path_end":
     {
         "type":"pin",
-        "log_name":"controller/h_count_588__i9/CK",
-        "phy_name":"h_count_588__i9/CK"
+        "log_name":"controller/h_count_646__i5/CK",
+        "phy_name":"h_count_646__i5/CK"
     },
     "path_sections":[
     {
@@ -3355,7 +3356,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
@@ -3484,13 +3485,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i14_3_lut_3_lut/C",
-            "phy_name":"i14_3_lut_3_lut/C"
+            "log_name":"i13_3_lut_4_lut_3_lut/B",
+            "phy_name":"i13_3_lut_4_lut_3_lut/B"
         },
         "pin1":
         {
-            "log_name":"i14_3_lut_3_lut/Z",
-            "phy_name":"i14_3_lut_3_lut/Z"
+            "log_name":"i13_3_lut_4_lut_3_lut/Z",
+            "phy_name":"i13_3_lut_4_lut_3_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -3499,8 +3500,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n6_adj_1072",
-            "phy_name":"n6_adj_1072"
+            "log_name":"n19691",
+            "phy_name":"n19691"
         },
         "arrive":6.271,
         "delay":2.075
@@ -3513,8 +3514,9 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 count_i1/CK->count_i1/Q                   FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  10      
 count[1]                                                  NET DELAY      0.280         3.746  1       
-i14_3_lut_3_lut/C->i14_3_lut_3_lut/Z      LUT4            C_TO_Z_DELAY   0.450         4.196  1       
-n6_adj_1072                                               NET DELAY      2.075         6.271  1       
+i13_3_lut_4_lut_3_lut/B->i13_3_lut_4_lut_3_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.450         4.196  1       
+n19691                                                    NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -3667,13 +3669,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2878_2_lut_3_lut/C",
-            "phy_name":"i2878_2_lut_3_lut/C"
+            "log_name":"i1_3_lut/B",
+            "phy_name":"i1_3_lut/B"
         },
         "pin1":
         {
-            "log_name":"i2878_2_lut_3_lut/Z",
-            "phy_name":"i2878_2_lut_3_lut/Z"
+            "log_name":"i1_3_lut/Z",
+            "phy_name":"i1_3_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -3682,8 +3684,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n3553",
-            "phy_name":"n3553"
+            "log_name":"n2241",
+            "phy_name":"n2241"
         },
         "arrive":6.271,
         "delay":2.075
@@ -3696,8 +3698,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 count_i1/CK->count_i1/Q                   FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  10      
 count[1]                                                  NET DELAY      0.280         3.746  1       
-i2878_2_lut_3_lut/C->i2878_2_lut_3_lut/Z  LUT4            C_TO_Z_DELAY   0.450         4.196  1       
-n3553                                                     NET DELAY      2.075         6.271  1       
+i1_3_lut/B->i1_3_lut/Z                    LUT4            B_TO_Z_DELAY   0.450         4.196  1       
+n2241                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -3850,13 +3852,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1567_4_lut_4_lut/D",
-            "phy_name":"i1567_4_lut_4_lut/D"
+            "log_name":"i1_4_lut_adj_230/D",
+            "phy_name":"i1_4_lut_adj_230/D"
         },
         "pin1":
         {
-            "log_name":"i1567_4_lut_4_lut/Z",
-            "phy_name":"i1567_4_lut_4_lut/Z"
+            "log_name":"i1_4_lut_adj_230/Z",
+            "phy_name":"i1_4_lut_adj_230/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -3865,8 +3867,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2250",
-            "phy_name":"n2250"
+            "log_name":"n2243",
+            "phy_name":"n2243"
         },
         "arrive":6.271,
         "delay":2.075
@@ -3879,8 +3881,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-i1567_4_lut_4_lut/D->i1567_4_lut_4_lut/Z  LUT4            D_TO_Z_DELAY   0.450         4.196  1       
-n2250                                                     NET DELAY      2.075         6.271  1       
+i1_4_lut_adj_230/D->i1_4_lut_adj_230/Z    LUT4            D_TO_Z_DELAY   0.450         4.196  1       
+n2243                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -3927,13 +3929,196 @@ Clk                                                       NET DELAY      2.075  
 
 <A name="Timing_rpt_HoldDetailedConstraint_2"></A><A href=#Timing_rpt_HoldSummaryConstraint_2>4.2.2  Hold path details for constraint: create_generated_clock -name {ClockK} -source [get_pins {pll/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 21 -divide_by 8 [get_pins {pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </A>
 ----------------------------------------------------------------------
-50 endpoints scored, 0 timing errors detected.
+51 endpoints scored, 0 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : count_i1/Q
+Path End         : Pas_Gen/pausa_c/D
+Source Clock     : pll/lscc_pll_inst/Clk
+Destination Clock: ClockK
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 2.225 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 1.971 ns  (Passed)
+
+  Destination Clock Arrival Time (ClockK:R#1)     0.000
++ Generated Clock Source Latency                  2.225
++ Destination Clock Uncertainty                   0.000
++ Destination Clock Path Delay                    2.075
++ Hold Time                                      -0.000
+---------------------------------------------   -------
+End-of-path required time( ns )                   4.300
+
+  Source Clock Arrival Time (pll/lscc_pll_inst/Clk:R#1)   0.000
++ Source Clock Source Latency                             0.000
++ Source Clock Path Delay                                 2.075
++ Data Path Delay                                         4.196
+-------------------------------------------------------   -----
+End-of-path arrival time( ns )                            6.271
+
+ 
+Source Clock Path
+<tapath class="path_info">
+<xmp>
+{
+    "path_begin":
+    {
+        "type":"pin",
+        "log_name":"ins1/CLKHF",
+        "phy_name":"ins1/CLKHF"
+    },
+    "path_end":
+    {
+        "type":"pin",
+        "log_name":"count_i1/CK",
+        "phy_name":"count_i1/CK"
+    },
+    "path_sections":[
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"Clk",
+            "phy_name":"Clk"
+        },
+        "arrive":2.075,
+        "delay":2.075
+    }
+    ]
+}
+</xmp>
+</tapath>
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+ins1/CLKHF                                HSOSC_CORE      CLOCK LATENCY  0.000         0.000  4       
+Clk                                                       NET DELAY      2.075         2.075  1       
+
+
+Data path
+<tapath class="path_info">
+<xmp>
+{
+    "path_begin":
+    {
+        "type":"pin",
+        "log_name":"count_i1/Q",
+        "phy_name":"count_i1/Q"
+    },
+    "path_end":
+    {
+        "type":"pin",
+        "log_name":"Pas_Gen/pausa_c/D",
+        "phy_name":"pausa_c/D"
+    },
+    "path_sections":[
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"count_i1/CK",
+            "phy_name":"count_i1/CK"
+        },
+        "pin1":
+        {
+            "log_name":"count_i1/Q",
+            "phy_name":"count_i1/Q"
+        },
+        "arrive":3.466,
+        "delay":1.391
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"count[1]",
+            "phy_name":"count[1]"
+        },
+        "arrive":3.746,
+        "delay":0.280
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i1_3_lut_4_lut/A",
+            "phy_name":"i1_3_lut_4_lut/A"
+        },
+        "pin1":
+        {
+            "log_name":"i1_3_lut_4_lut/Z",
+            "phy_name":"i1_3_lut_4_lut/Z"
+        },
+        "arrive":4.196,
+        "delay":0.450
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"n2240",
+            "phy_name":"n2240"
+        },
+        "arrive":6.271,
+        "delay":2.075
+    }
+    ]
+}
+</xmp>
+</tapath>
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+count_i1/CK->count_i1/Q                   FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  10      
+count[1]                                                  NET DELAY      0.280         3.746  1       
+i1_3_lut_4_lut/A->i1_3_lut_4_lut/Z        LUT4            A_TO_Z_DELAY   0.450         4.196  1       
+n2240                                                     NET DELAY      2.075         6.271  1       
+
+
+Destination Clock Path
+<tapath class="path_info">
+<xmp>
+{
+    "path_begin":
+    {
+        "type":"pin",
+        "log_name":"pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL",
+        "phy_name":"u_PLL_B/OUTGLOBAL"
+    },
+    "path_end":
+    {
+        "type":"pin",
+        "log_name":"Pas_Gen/pausa_c/CK",
+        "phy_name":"pausa_c/CK"
+    },
+    "path_sections":[
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"ClockK",
+            "phy_name":"ClockK"
+        },
+        "arrive":4.300,
+        "delay":2.075
+    }
+    ]
+}
+</xmp>
+</tapath>
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
+ClockK                                                    NET DELAY      2.075         4.300  1       
+
+
+
+
+ ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i1/SR
@@ -4044,13 +4229,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -4059,8 +4244,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -4073,9 +4258,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -4111,13 +4295,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i2/SR
@@ -4228,13 +4412,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -4243,8 +4427,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -4257,9 +4441,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -4295,13 +4478,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i3/SR
@@ -4412,13 +4595,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -4427,8 +4610,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -4441,9 +4624,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -4479,13 +4661,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i4/SR
@@ -4596,13 +4778,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -4611,8 +4793,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -4625,9 +4807,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -4663,13 +4844,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i5/SR
@@ -4780,13 +4961,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -4795,8 +4976,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -4809,9 +4990,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -4847,13 +5027,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i6/SR
@@ -4964,13 +5144,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -4979,8 +5159,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -4993,9 +5173,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -5031,13 +5210,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i7/SR
@@ -5148,13 +5327,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -5163,8 +5342,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -5177,9 +5356,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -5215,13 +5393,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i8/SR
@@ -5332,13 +5510,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -5347,8 +5525,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -5361,9 +5539,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -5399,13 +5576,13 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 
 
 
- ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Path Begin       : reset_c/Q
 Path End         : controller/v_count__i9/SR
@@ -5516,13 +5693,13 @@ Data path
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
+            "log_name":"i21298_4_lut/A",
+            "phy_name":"i21298_4_lut/A"
         },
         "pin1":
         {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
+            "log_name":"i21298_4_lut/Z",
+            "phy_name":"i21298_4_lut/Z"
         },
         "arrive":4.196,
         "delay":0.450
@@ -5531,8 +5708,8 @@ Data path
         "type":"net_delay",
         "net":
         {
-            "log_name":"n1071",
-            "phy_name":"n1071"
+            "log_name":"n1084",
+            "phy_name":"n1084"
         },
         "arrive":6.271,
         "delay":2.075
@@ -5545,9 +5722,8 @@ Name                                      Cell/Site Name  Delay Name     Delay  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
 reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
+i21298_4_lut/A->i21298_4_lut/Z            LUT4            A_TO_Z_DELAY   0.450         4.196  11      
+n1084                                                     NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
@@ -5583,191 +5759,7 @@ Destination Clock Path
 </tapath>
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
-ClockK                                                    NET DELAY      2.075         4.300  1       
-
-
-
-
- ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin       : reset_c/Q
-Path End         : controller/v_count__i0/SR
-Source Clock     : pll/lscc_pll_inst/Clk
-Destination Clock: ClockK
-Logic Level      : 2
-Delay Ratio      : 56.1% (route), 43.9% (logic)
-Clock Skew       : 2.225 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 2.448 ns  (Passed)
-
-  Destination Clock Arrival Time (ClockK:R#1)     0.000
-+ Generated Clock Source Latency                  2.225
-+ Destination Clock Uncertainty                   0.000
-+ Destination Clock Path Delay                    2.075
-+ Hold Time                                       0.477
----------------------------------------------   -------
-End-of-path required time( ns )                   3.823
-
-  Source Clock Arrival Time (pll/lscc_pll_inst/Clk:R#1)   0.000
-+ Source Clock Source Latency                             0.000
-+ Source Clock Path Delay                                 2.075
-+ Data Path Delay                                         4.196
--------------------------------------------------------   -----
-End-of-path arrival time( ns )                            6.271
-
- 
-Source Clock Path
-<tapath class="path_info">
-<xmp>
-{
-    "path_begin":
-    {
-        "type":"pin",
-        "log_name":"ins1/CLKHF",
-        "phy_name":"ins1/CLKHF"
-    },
-    "path_end":
-    {
-        "type":"pin",
-        "log_name":"reset_c/CK",
-        "phy_name":"reset_c/CK"
-    },
-    "path_sections":[
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"Clk",
-            "phy_name":"Clk"
-        },
-        "arrive":2.075,
-        "delay":2.075
-    }
-    ]
-}
-</xmp>
-</tapath>
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-ins1/CLKHF                                HSOSC_CORE      CLOCK LATENCY  0.000         0.000  4       
-Clk                                                       NET DELAY      2.075         2.075  1       
-
-
-Data path
-<tapath class="path_info">
-<xmp>
-{
-    "path_begin":
-    {
-        "type":"pin",
-        "log_name":"reset_c/Q",
-        "phy_name":"reset_c/Q"
-    },
-    "path_end":
-    {
-        "type":"pin",
-        "log_name":"controller/v_count__i0/SR",
-        "phy_name":"v_count__i0/SR"
-    },
-    "path_sections":[
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"reset_c/CK",
-            "phy_name":"reset_c/CK"
-        },
-        "pin1":
-        {
-            "log_name":"reset_c/Q",
-            "phy_name":"reset_c/Q"
-        },
-        "arrive":3.466,
-        "delay":1.391
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"reset",
-            "phy_name":"reset"
-        },
-        "arrive":3.746,
-        "delay":0.280
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"controller/i13214_4_lut/B",
-            "phy_name":"i13214_4_lut/B"
-        },
-        "pin1":
-        {
-            "log_name":"controller/i13214_4_lut/Z",
-            "phy_name":"i13214_4_lut/Z"
-        },
-        "arrive":4.196,
-        "delay":0.450
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n1071",
-            "phy_name":"n1071"
-        },
-        "arrive":6.271,
-        "delay":2.075
-    }
-    ]
-}
-</xmp>
-</tapath>
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-reset_c/CK->reset_c/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  3       
-reset                                                     NET DELAY      0.280         3.746  1       
-controller/i13214_4_lut/B->controller/i13214_4_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         4.196  11      
-n1071                                                     NET DELAY      2.075         6.271  1       
-
-
-Destination Clock Path
-<tapath class="path_info">
-<xmp>
-{
-    "path_begin":
-    {
-        "type":"pin",
-        "log_name":"pll/lscc_pll_inst/u_PLL_B/OUTGLOBAL",
-        "phy_name":"u_PLL_B/OUTGLOBAL"
-    },
-    "path_end":
-    {
-        "type":"pin",
-        "log_name":"controller/v_count__i0/CK",
-        "phy_name":"v_count__i0/CK"
-    },
-    "path_sections":[
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"ClockK",
-            "phy_name":"ClockK"
-        },
-        "arrive":4.300,
-        "delay":2.075
-    }
-    ]
-}
-</xmp>
-</tapath>
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  20      
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  21      
 ClockK                                                    NET DELAY      2.075         4.300  1       
 
 

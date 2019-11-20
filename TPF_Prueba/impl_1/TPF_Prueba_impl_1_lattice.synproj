@@ -33,21 +33,21 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--sdc "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Clock.ldc"
--path "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll"
--path "C:/lscc/radiant/1.1/ispfpga/ice40tp/data" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1" "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba"
+-sdc "C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/Clock.ldc"
+-path "C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/My_Pll"
+-path "C:/lscc/radiant/1.1/ispfpga/ice40tp/data" "C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/impl_1" "C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba"
 -ver "C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd"
--ver "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Top.v"
-"C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/VGA.v"
-"C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBar.v"
-"C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/BallandBarMovement.v"
-"C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/ResetGame.v"
-"C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/My_Pll/rtl/My_Pll.v"
-"C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/Points.v"
+-ver "C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/Top.v"
+"C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/VGA.v"
+"C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/BallandBar.v"
+"C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/BallandBarMovement.v"
+"C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/ResetGame.v"
+"C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/My_Pll/rtl/My_Pll.v"
+"C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/Points.v"
 
 
--path "C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba"
+-path "C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba"
 -top main
 -udb "TPF_Prueba_impl_1.udb"
 -output_hdl "TPF_Prueba_impl_1.vm"

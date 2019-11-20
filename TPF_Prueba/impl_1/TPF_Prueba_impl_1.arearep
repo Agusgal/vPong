@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  72 of 5280 (1.364%)
-I/O cells:      9
+Register bits:  73 of 5280 (1.383%)
+I/O cells:      10
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        86          100.0
-                            FD1P3XZ        72          100.0
+                               CCU2        89          100.0
+                            FD1P3XZ        73          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         4          100.0
-                               LUT4       473          100.0
+                                 IB         5          100.0
+                               LUT4       504          100.0
                               MAC16         8          100.0
                                  OB         5          100.0
                               PLL_B         1          100.0
@@ -21,36 +21,64 @@ SUB MODULES
                            BarrMov2         1
                              My_Pll         1
 My_Pll_ipgen_lscc_pll(DIVR="0",DIVF="83",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                          PausaGame         1
                             Puntos1         1
                             Puntos2         1
                           ResetGame         1
                                 VGA         1
-                              TOTAL       662
+                               Wall         1
+                            Wall_U1         1
+                              TOTAL       701
 ----------------------------------------------------------------------
 Report for cell Ball.v1
 Instance Path : pelota
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         8            9.3
-                               LUT4        30            6.3
-                              MAC16         4           50.0
-                              TOTAL        42
+                                FA2        12           13.5
+                               LUT4        29            5.8
+                              MAC16         3           37.5
+                              TOTAL        44
 ----------------------------------------------------------------------
 Report for cell BallMov.v1
 Instance Path : x_ball_6__I_0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        40           46.5
-                            FD1P3XZ        24           33.3
-                               LUT4       162           34.2
-                              TOTAL       226
+                                FA2        34           38.2
+                            FD1P3XZ        24           32.9
+                               LUT4       126           25.0
+                              TOTAL       184
+----------------------------------------------------------------------
+Report for cell Wall.v1
+Instance Path : ParedI
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         5            5.6
+                               LUT4        14            2.8
+                              MAC16         1           12.5
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell PausaGame.v1
+Instance Path : Pas_Gen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            1.4
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell BarrMov1.v1
+Instance Path : barrap1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         8            9.0
+                            FD1P3XZ         7            9.6
+                               LUT4        16            3.2
+                              TOTAL        31
 ----------------------------------------------------------------------
 Report for cell Bar.v1
 Instance Path : barra2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         5            5.8
-                               LUT4        33            7.0
+                                FA2         5            5.6
+                               LUT4        33            6.5
                               MAC16         3           37.5
                               TOTAL        41
 ----------------------------------------------------------------------
@@ -58,42 +86,15 @@ Report for cell Puntos2.v1
 Instance Path : p2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        26            5.5
-                              TOTAL        26
-----------------------------------------------------------------------
-Report for cell VGA.v1
-Instance Path : controller
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        12           14.0
-                            FD1P3XZ        20           27.8
-                               LUT4        27            5.7
-                              TOTAL        59
-----------------------------------------------------------------------
-Report for cell BarrMov1.v1
-Instance Path : barrap1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2         8            9.3
-                            FD1P3XZ         7            9.7
-                               LUT4        19            4.0
-                              TOTAL        34
-----------------------------------------------------------------------
-Report for cell BarrMov2.v1
-Instance Path : barrap2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2         4            4.7
-                            FD1P3XZ        12           16.7
-                               LUT4        28            5.9
-                              TOTAL        44
+                               LUT4        12            2.4
+                              TOTAL        12
 ----------------------------------------------------------------------
 Report for cell Bar_U0.v1
 Instance Path : barra1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         5            5.8
-                               LUT4        12            2.5
+                                FA2         5            5.6
+                               LUT4        12            2.4
                               MAC16         1           12.5
                               TOTAL        18
 ----------------------------------------------------------------------
@@ -101,15 +102,31 @@ Report for cell ResetGame.v1
 Instance Path : Res_Gen
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         6            1.3
-                              TOTAL         6
+                               LUT4         3            0.6
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell Wall_U1.v1
+Instance Path : ParedD
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            0.6
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell BarrMov2.v1
+Instance Path : barrap2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         4            4.5
+                            FD1P3XZ        12           16.4
+                               LUT4        20            4.0
+                              TOTAL        36
 ----------------------------------------------------------------------
 Report for cell Puntos1.v1
 Instance Path : p1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        17            3.6
-                              TOTAL        17
+                               LUT4        33            6.5
+                              TOTAL        33
 ----------------------------------------------------------------------
 Report for cell My_Pll.v1
 Instance Path : pll
@@ -126,3 +143,12 @@ Instance Path : pll.lscc_pll_inst
                                cell     count   Res Usage(%)
                               PLL_B         1          100.0
                               TOTAL         1
+----------------------------------------------------------------------
+Report for cell VGA.v1
+Instance Path : controller
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12           13.5
+                            FD1P3XZ        20           27.4
+                               LUT4        25            5.0
+                              TOTAL        57

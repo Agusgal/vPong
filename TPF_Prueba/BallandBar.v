@@ -20,3 +20,14 @@ module Ball(x_place,y_place,h_count,v_count,red,green,blue);
 	assign red = ( (h_count >= (x_place*SIZE) ) & (h_count < ( (x_place+1)*SIZE ) ) & (v_count >= (y_place*SIZE)) & (v_count < ( (y_place+1)*SIZE ) ) );
 	assign green = 0;
 endmodule;
+//Limites de espaco
+module Wall(x_place,y_place,h_count,v_count,red,green,blue);
+	input [9:0]	h_count,v_count;
+	input [6:0] x_place,y_place;
+	output red,green,blue;
+	localparam YSIZE = 480;
+	localparam XSIZE = 10;
+	assign red = ( (h_count >= (x_place*XSIZE) ) & (h_count < ( ( (x_place*XSIZE)+XSIZE) ) ) & (v_count >= (y_place*XSIZE)) & (v_count < ( (y_place*XSIZE)+YSIZE ) ) );
+	assign blue = ( (h_count >= (x_place*XSIZE) ) & (h_count < ( ( (x_place*XSIZE)+XSIZE) ) ) & (v_count >= (y_place*XSIZE)) & (v_count < ( (y_place*XSIZE)+YSIZE ) ) );
+	assign green = ( (h_count >= (x_place*XSIZE) ) & (h_count < ( ( (x_place*XSIZE)+XSIZE) ) ) & (v_count >= (y_place*XSIZE)) & (v_count < ( (y_place*XSIZE)+YSIZE ) ) );
+endmodule;

@@ -3,75 +3,105 @@ Report for cell main
    Instance path: main
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        497        100.0
-                                 IOBUF	          5        100.0
-                                PFUREG	         66        100.0
+                                  LUT4	        685        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	         73        100.0
                                    DSP	          8        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                                  Ball	          1         7.6
-                               BallMov	          1        30.2
-                                   Bar	          1         7.0
-                                Bar_U0	          1         3.6
-                              BarrMov1	          1         0.0
-                              BarrMov2	          1         0.0
+                                  Ball	          1         6.6
+                               BallMov	          1        26.1
+                                   Bar	          1         5.1
+                                Bar_U0	          1         2.6
+                              BarrMov1	          1         4.7
+                              BarrMov2	          1         4.1
                                 My_Pll	          1         0.0
+                             PausaGame	          1         0.0
                                Puntos1	          1         4.8
-                               Puntos2	          1         3.4
-                             ResetGame	          1         0.6
-                                   VGA	          1        12.3
+                               Puntos2	          1         1.6
+                             ResetGame	          1         0.4
+                                   VGA	          1         6.9
+                                  Wall	          1         2.9
+                               Wall_U1	          1         0.4
 ---------------------------------------------------
 Report for cell Ball
    Instance path: main/pelota
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         38         7.6
-                                   DSP	          4        50.0
+                                  LUT4	         45         6.6
+                                   DSP	          3        37.5
 ---------------------------------------------------
 Report for cell BallMov
    Instance path: main/x_ball_6__I_0
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        150        30.2
-                                PFUREG	         24        36.4
+                                  LUT4	        179        26.1
+                                PFUREG	         24        32.9
+---------------------------------------------------
+Report for cell Wall
+   Instance path: main/ParedI
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         2.9
+                                   DSP	          1        12.5
+---------------------------------------------------
+Report for cell PausaGame
+   Instance path: main/Pas_Gen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         1.4
 ---------------------------------------------------
 Report for cell BarrMov1
    Instance path: main/barrap1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          4         6.1
+                                  LUT4	         32         4.7
+                                PFUREG	          7         9.6
 ---------------------------------------------------
 Report for cell Bar
    Instance path: main/barra2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         35         7.0
+                                  LUT4	         35         5.1
                                    DSP	          3        37.5
 ---------------------------------------------------
 Report for cell Puntos2
    Instance path: main/p2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         17         3.4
----------------------------------------------------
-Report for cell Puntos1
-   Instance path: main/p1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         24         4.8
+                                  LUT4	         11         1.6
 ---------------------------------------------------
 Report for cell Bar_U0
    Instance path: main/barra1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         18         3.6
+                                  LUT4	         18         2.6
                                    DSP	          1        12.5
 ---------------------------------------------------
 Report for cell ResetGame
    Instance path: main/Res_Gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          3         0.6
+                                  LUT4	          3         0.4
+---------------------------------------------------
+Report for cell Wall_U1
+   Instance path: main/ParedD
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.4
+---------------------------------------------------
+Report for cell BarrMov2
+   Instance path: main/barrap2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         4.1
+                                PFUREG	         12        16.4
+---------------------------------------------------
+Report for cell Puntos1
+   Instance path: main/p1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         33         4.8
 ---------------------------------------------------
 Report for cell My_Pll
    Instance path: main/pll
@@ -86,15 +116,9 @@ Report for cell My_Pll_ipgen_lscc_pll(DIVR="0",DIVF="83",DIVQ="5",FILTER_RANGE="
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell BarrMov2
-   Instance path: main/barrap2
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                PFUREG	          9        13.6
----------------------------------------------------
 Report for cell VGA
    Instance path: main/controller
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         61        12.3
-                                PFUREG	         20        30.3
+                                  LUT4	         47         6.9
+                                PFUREG	         20        27.4

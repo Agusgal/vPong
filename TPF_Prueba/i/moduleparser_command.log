@@ -1,1 +1,1 @@
-C:/lscc/radiant/1.1/bin/nt64/moduleparser.exe -PROJ i -pf C:/lscc/radiant/1.1/cae_library/synthesis/vhdl/iCE40UP.vhd -lib iCE40UP -lst C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/i/source_files.lst
+C:/lscc/radiant/1.1/bin/nt64/moduleparser.exe -PROJ i -pf C:/lscc/radiant/1.1/cae_library/synthesis/vhdl/iCE40UP.vhd -lib iCE40UP -lst C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/i/source_files.lst

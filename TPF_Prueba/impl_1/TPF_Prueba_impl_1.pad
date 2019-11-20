@@ -6,15 +6,20 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Mon Nov 18 13:58:28 2019
+Wed Nov 20 18:24:03 2019
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+--------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | Properties         |
 +-----------+----------+--------------+-------+--------------------+
 | blue      | 6/1      | LVCMOS33_OUT | PL14B | DRIVE:8mA PULL:NA  |
+| der1      | 18/1     | LVCMOS33_IN  | PL23B | PULL:100K          |
+| der2      | 25/0     | LVCMOS33_IN  | PR20B | PULL:100K          |
 | green     | 9/1      | LVCMOS33_OUT | PL16A | DRIVE:8mA PULL:NA  |
 | h_sync    | 11/1     | LVCMOS33_OUT | PL18A | DRIVE:8mA PULL:NA  |
+| izq1      | 19/1     | LVCMOS33_IN  | PL22B | PULL:100K          |
+| izq2      | 26/0     | LVCMOS33_IN  | PR19A | PULL:100K          |
+| pause     | 36/0     | LVCMOS33_IN  | PR10B | PULL:100K          |
 | red       | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA PULL:NA  |
 | v_sync    | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
 +-----------+----------+--------------+-------+--------------------+
@@ -23,6 +28,7 @@ Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
+| 0    | 3.3V  |
 | 1    | 3.3V  |
 | 2    | 3.3V  |
 +------+-------+
@@ -44,20 +50,20 @@ Pinout by Pin Number:
 | 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
 | 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
 | 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
-| 18/1     |     unused, PULL:UP |            |              | PL23B |                  |
-| 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
+| 18/1     | der1                | LOCATED    | LVCMOS33_IN  | PL23B |                  |
+| 19/1     | izq1                | LOCATED    | LVCMOS33_IN  | PL22B |                  |
 | 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
 | 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
-| 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
-| 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
+| 25/0     | der2                | LOCATED    | LVCMOS33_IN  | PR20B |                  |
+| 26/0     | izq2                | LOCATED    | LVCMOS33_IN  | PR19A |                  |
 | 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
 | 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
 | 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
 | 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
 | 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
-| 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
+| 36/0     | pause               | LOCATED    | LVCMOS33_IN  | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
 | 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
 | 39/0     |                     |            |              | PR5A  | RGB0             |
@@ -93,8 +99,13 @@ Pinout by Pin Number:
 Locate Constraints for each Pin: 
 
 ldc_set_location -site {6} [ get_ports {blue} ]
+ldc_set_location -site {18} [ get_ports {der1} ]
+ldc_set_location -site {25} [ get_ports {der2} ]
 ldc_set_location -site {9} [ get_ports {green} ]
 ldc_set_location -site {11} [ get_ports {h_sync} ]
+ldc_set_location -site {19} [ get_ports {izq1} ]
+ldc_set_location -site {26} [ get_ports {izq2} ]
+ldc_set_location -site {36} [ get_ports {pause} ]
 ldc_set_location -site {10} [ get_ports {red} ]
 ldc_set_location -site {2} [ get_ports {v_sync} ]
 
@@ -103,5 +114,5 @@ ldc_set_location -site {2} [ get_ports {v_sync} ]
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Mon Nov 18 13:58:28 2019
+Wed Nov 20 18:24:03 2019
 

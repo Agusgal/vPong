@@ -1,19 +1,24 @@
 POSTSYN: Post Synthesis Process Radiant Software (64-bit) 1.1.0.165.1
-Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o TPF_Prueba_impl_1.udb -ldc C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc -gui -msgset C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/promote.xml TPF_Prueba_impl_1.vm 
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o TPF_Prueba_impl_1.udb -ldc C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc -gui -msgset C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/promote.xml TPF_Prueba_impl_1.vm 
    Architecture:     iCE40UP
    Device:           iCE40UP5K
    Package:          SG48
    Performance:      High-Performance_1.2V
 Reading input file 'TPF_Prueba_impl_1.vm' ...
-Reading constraint file 'C:/Users/Juan Martin/Documents/ProyectosRadiant/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc' ...
+Reading constraint file 'C:/Users/Abril/Documents/GitHub/tpf-grupo-4/TPF_Prueba/impl_1/TPF_Prueba_impl_1.ldc' ...
 WARNING - No port matched 'Clk'.
 WARNING - Can't resolve object 'Clk' in constraint 'create_clock -name {Clk} -period 83.3333333333333 [get_ports Clk]'.
 WARNING - Remove invalid constraint 'create_clock -name {Clk} -period 83.3333333333333 [get_ports Clk]'.
 Removing unused logic...
-INFO - Signal barra1/blue_N_664[10]_2 undriven or does not drive anything - clipped
-INFO - Signal barra1/blue_N_664[9]_2 undriven or does not drive anything - clipped
-INFO - Signal barra1/blue_N_664[2]_2 undriven or does not drive anything - clipped
-INFO - Signal barra1/blue_N_664[1]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[9]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[8]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[7]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[6]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[5]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[4]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[3]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[2]_2 undriven or does not drive anything - clipped
+INFO - Signal controller/y_count[1]_2 undriven or does not drive anything - clipped
 INFO - Signal controller/x_count[9]_2 undriven or does not drive anything - clipped
 INFO - Signal controller/x_count[8]_2 undriven or does not drive anything - clipped
 INFO - Signal controller/x_count[7]_2 undriven or does not drive anything - clipped
@@ -23,46 +28,42 @@ INFO - Signal controller/x_count[4]_2 undriven or does not drive anything - clip
 INFO - Signal controller/x_count[3]_2 undriven or does not drive anything - clipped
 INFO - Signal controller/x_count[2]_2 undriven or does not drive anything - clipped
 INFO - Signal controller/x_count[1]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_664[2]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_664[1]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[11]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[9]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[8]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[7]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[6]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[5]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[4]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[3]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[2]_2 undriven or does not drive anything - clipped
-INFO - Signal barra2/blue_N_721[1]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[6]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[5]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[4]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[3]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[2]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[1]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_269[0]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[6]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[5]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[4]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[3]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[2]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[1]_2 undriven or does not drive anything - clipped
-INFO - Signal x_ball_6__I_0/up_N_450[0]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[9]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[8]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[7]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[6]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[5]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[4]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[3]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[2]_2 undriven or does not drive anything - clipped
-INFO - Signal pelota/red_N_584[1]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_494[10]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_494[9]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_494[2]_2 undriven or does not drive anything - clipped
+INFO - Signal barra1/blue_N_494[1]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_494[10]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_494[2]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_494[1]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[11]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[9]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[8]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[7]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[6]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[5]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[4]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[3]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[2]_2 undriven or does not drive anything - clipped
+INFO - Signal barra2/blue_N_551[1]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/der_N_249[3]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/der_N_249[2]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/der_N_249[1]_2 undriven or does not drive anything - clipped
+INFO - Signal x_ball_6__I_0/der_N_249[0]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_402[10]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[11]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[9]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[8]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[7]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[6]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[5]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[4]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[3]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[2]_2 undriven or does not drive anything - clipped
+INFO - Signal pelota/red_N_459[1]_2 undriven or does not drive anything - clipped
 INFO - Signal x_count[0] undriven or does not drive anything - clipped
+INFO - Signal y_count[0] undriven or does not drive anything - clipped
 INFO - Signal y_bar2[6] undriven or does not drive anything - clipped
 INFO - Signal y_bar2[4] undriven or does not drive anything - clipped
-INFO - Signal speeddef[1] undriven or does not drive anything - clipped
-INFO - Signal speeddef[0] undriven or does not drive anything - clipped
 Starting design annotation....
 WARNING - The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 Writing output file 'TPF_Prueba_impl_1.udb'.

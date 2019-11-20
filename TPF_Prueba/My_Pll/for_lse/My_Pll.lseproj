@@ -24,7 +24,7 @@
 -sethld
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--ver "C:\Users\Juan Martin\Documents\ProyectosRadiant\TPF_Prueba\My_Pll\rtl\My_Pll.v"
+-ver "C:\Users\Abril\Documents\GitHub\tpf-grupo-4\TPF_Prueba\My_Pll\rtl\My_Pll.v"
 -top My_Pll
 -udb "My_Pll.udb"
 -output_hdl "My_Pll.vm"

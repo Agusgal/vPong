@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="0" build_time="1574096576">
-            <Task name="Bitgen" build_result="0" update_result="2" update_time="1574096576"/>
-            <Task name="IBIS" build_result="0" update_result="2" update_time="1574096576"/>
-            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1574096576"/>
+        <Milestone name="Export" build_result="2" build_time="1574285059">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1574285059"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1574285060"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1574285065"/>
         </Milestone>
-        <Milestone name="Map" build_result="0" build_time="1574096576">
-            <Task name="Map" build_result="0" update_result="2" update_time="1574096576"/>
-            <Task name="MapTrace" build_result="0" update_result="2" update_time="1574096576"/>
+        <Milestone name="Map" build_result="2" build_time="1574285014">
+            <Task name="Map" build_result="2" update_result="0" update_time="1574285014"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1574285014"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1574096576">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1574096576"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="1574096576"/>
+        <Milestone name="PAR" build_result="2" build_time="1574285052">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1574285052"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1574285057"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1574096864">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1574096864"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1574096791"/>
-            <Task name="SynTrace" build_result="2" update_result="0" update_time="1574096865"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1574285009">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1574285009"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1574285010"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1574285010"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1574081248"/>
         </Milestone>
-        <Report name="IBIS/TPF_Prueba_impl_1.ibs" last_build_time="1574096319" last_build_size="45271"/>
-        <Report name="TPF_Prueba_impl_1.bgn" last_build_time="1574096318" last_build_size="948"/>
-        <Report name="TPF_Prueba_impl_1.bin" last_build_time="1574096318" last_build_size="104156"/>
-        <Report name="TPF_Prueba_impl_1.lsedata" last_build_time="1574096791" last_build_size="827339"/>
-        <Report name="TPF_Prueba_impl_1.tw1.html" last_build_time="1574096294" last_build_size="229484"/>
-        <Report name="TPF_Prueba_impl_1.twr.html" last_build_time="1574096316" last_build_size="228359"/>
-        <Report name="TPF_Prueba_impl_1.tws.html" last_build_time="1574096865" last_build_size="185377"/>
-        <Report name="TPF_Prueba_impl_1.udb::log" last_build_time="1574096864" last_build_size="703748"/>
-        <Report name="TPF_Prueba_impl_1.udb::phy_par" last_build_time="1574096313" last_build_size="936552"/>
-        <Report name="TPF_Prueba_impl_1.udb::rtl" last_build_time="1574096791" last_build_size="703748"/>
-        <Report name="TPF_Prueba_impl_1_map.udb" last_build_time="1574096294" last_build_size="881208"/>
-        <Report name="TPF_Prueba_impl_1_vo.sdf" last_build_time="1574096321" last_build_size="305784"/>
-        <Report name="TPF_Prueba_impl_1_vo.vo" last_build_time="1574096321" last_build_size="319203"/>
+        <Report name="IBIS/TPF_Prueba_impl_1.ibs" last_build_time="1574285060" last_build_size="54306"/>
+        <Report name="TPF_Prueba_impl_1.bgn" last_build_time="1574285058" last_build_size="944"/>
+        <Report name="TPF_Prueba_impl_1.bin" last_build_time="1574285059" last_build_size="104156"/>
+        <Report name="TPF_Prueba_impl_1.lsedata" last_build_time="1574285004" last_build_size="889982"/>
+        <Report name="TPF_Prueba_impl_1.tw1.html" last_build_time="1574285014" last_build_size="221151"/>
+        <Report name="TPF_Prueba_impl_1.twr.html" last_build_time="1574285056" last_build_size="222622"/>
+        <Report name="TPF_Prueba_impl_1.tws.html" last_build_time="1574285010" last_build_size="184588"/>
+        <Report name="TPF_Prueba_impl_1.udb::log" last_build_time="1574285009" last_build_size="747492"/>
+        <Report name="TPF_Prueba_impl_1.udb::phy_par" last_build_time="1574285052" last_build_size="1169280"/>
+        <Report name="TPF_Prueba_impl_1.udb::rtl" last_build_time="1574285004" last_build_size="747492"/>
+        <Report name="TPF_Prueba_impl_1_map.udb" last_build_time="1574285014" last_build_size="1090690"/>
+        <Report name="TPF_Prueba_impl_1_vo.sdf" last_build_time="1574285065" last_build_size="411690"/>
+        <Report name="TPF_Prueba_impl_1_vo.vo" last_build_time="1574285064" last_build_size="416810"/>
     </Strategy>
 </BuildStatus>
